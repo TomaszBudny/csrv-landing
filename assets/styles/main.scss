@@ -1,0 +1,316 @@
+$primary: #2A6650;
+$secondary: #5CB089;
+$tertiary: #00BF66;
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $primary;
+  font-family: 'Lato', sans-serif;
+}
+
+.bg-primary {
+  background-color: $primary!important;
+}
+
+.text-primary {
+  color: $primary!important;
+}
+
+.bg-secondary {
+  background-color: $secondary!important;
+}
+
+.text-secondary {
+  color: $secondary!important;
+}
+
+.bg-tertiary {
+  background-color: $tertiary!important;
+}
+
+.text-tertiary {
+  color: $tertiary!important;
+}
+
+.bg-primary a,
+.bg-secondary a,
+.bg-tertiary a {
+  color: white!important;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+  color: $primary;
+  background-color: white;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: $secondary;
+  border-color: $secondary;
+}
+
+.btn-secondary:focus,
+.btn-secondary:hover {
+  color: $secondary;
+  background-color: white;
+}
+
+.btn-tertiary {
+  color: #fff;
+  background-color: $tertiary;
+  border-color: $tertiary;
+  box-shadow: 0 5px 20px -6px rgba(7,145,11,0.65);
+}
+
+.btn-tertiary:focus,
+.btn-tertiary:hover {
+  color: $tertiary;
+  background-color: white;
+}
+
+.btn-outline-tertiary {
+  color: $tertiary;
+  background-color: white;
+  border-color: $tertiary;
+}
+
+.btn-outline-tertiary:focus,
+.btn-outline-tertiary:hover {
+  color: white;
+  background-color: $tertiary;
+}
+
+.bg-image {
+  color: white;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.banner {
+  .top-nav {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.home-welcome {
+  min-height: 35vw;
+  background-image: url("../images/screenshot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.vps {
+  min-height: 20vw;
+  background-image: url("../images/screenshot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.shadow {
+  box-shadow: 3px 3px 20px 0 rgba(0,0,0,0.09);
+}
+
+img.shadow {
+  padding: 10px;
+  margin: 30px;
+}
+
+section {
+  header {
+    text-align: center;
+  }
+
+  .footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: right;
+    padding: 0 2rem;
+  }
+
+  .container {
+    position: relative;
+  }
+}
+
+.bg-image,
+.bg-primary,
+.bg-secondary,
+.bg-tertiary {
+  color: white;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+  }
+}
+
+.container.shadow {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.slope-after,
+.slope-before {
+  position: relative;
+}
+
+.slope-after::after,
+.slope-before::before {
+  position: absolute;
+  content: " ";
+  display: block;
+  left: 0;
+  right: 0;
+  border-style: solid;
+}
+
+.slope-white.slope-after::after {
+  border-color: transparent transparent white transparent;
+}
+
+.slope-after::after {
+  bottom: 0;
+  border-width: 0 100vw 150px 0;
+}
+$slope: 130px;
+
+.home-welcome {
+  padding-bottom: $slope;
+}
+
+.free {
+  margin-top: -$slope!important;
+  background: white;
+}
+
+.no-styling {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pros li {
+  width: 50%;
+  float: left;
+}
+
+.icons li::before {
+  font-family: "FontAwesome";
+  content: "\f14a";
+  margin-right: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.nope::before {
+  content: "\f00d"!important;
+  color: red!important;
+}
+
+.icons.color li::before {
+  color: $tertiary;
+}
+
+.trust {
+  .text-primary {
+    font-weight: 900;
+    font-size: 4rem;
+    display: block;
+  }
+}
+
+.top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  .one {
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+    background-image: url("../images/top-left-light.svg");
+    background-position: bottom right;
+    background-size: 2000px 200px;
+    position: absolute;
+    top: -200px;
+  }
+
+  .two {
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+    background-image: url("../images/bottom-right-dark.svg");
+    background-position: top left;
+    background-size: 2000px 200px;
+    position: absolute;
+    top: -0;
+    left: 50%;
+  }
+}
+.bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .one {
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+    background-image: url("../images/top-left-dark.svg");
+    background-position: bottom right;
+    background-size: 2000px 200px;
+    position: absolute;
+    top: -200px;
+  }
+
+  .two {
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+    background-image: url("../images/bottom-right-light.svg");
+    background-position: top left;
+    background-size: 2000px 200px;
+    position: absolute;
+    top: -0;
+    left: 50%;
+  }
+}
+
+.box {
+  position: absolute;
+}
+
+.box-1 {
+  left: -100px;
+  width: 80px;
+  height: 80px;
+}
