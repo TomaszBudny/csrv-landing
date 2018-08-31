@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4000" height="400">
+	<polygon style="fill:#B1E3CC" points="0,300 0,200 2000,200" />
+	<polygon style="fill:#31845D" points="2000,200 4000,200 4000,100" />
+</svg>

@@ -1,10 +1,53 @@
 $primary: #31845D;
 $secondary: #5CB089;
-$tertiary: #00BF66;
 $headers: #0D9958;
+$block: #5CB089;
+$button: #00BF66;
+$logo: #0C7235;
+$numbers: #2A6650;
+.text-numbers {
+  color: $numbers;
+}
+.help, .domain, .myb {
+  margin-top: 9rem!important;
+  margin-bottom: 9rem!important;
+}
+.ddos {
+  padding-top: 300px;
+  padding-bottom: 100px;
+}
+.container p {
+  font-size: 1.1rem;
+}
+.discord {
+  padding: 4rem 0;
+}
+.bg-logo {
+  background-color: $logo;
+  color: white;
+}
+
+.bg-block {
+  background-color: $block!important;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  border-color: #0D9958;
+  transition: all 0.4s;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  display: block;
+  padding: 2rem 0.7rem;
+  border-bottom: 3px solid transparent;
+  color: black;
+}
 
 body {
   overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1,
@@ -15,6 +58,7 @@ h5 {
   color: $headers;
   font-family: 'Lato', sans-serif;
 }
+
 .scrollprotection {
   position: absolute;
   top: 0;
@@ -22,10 +66,12 @@ h5 {
   bottom: 0;
   left: 0;
 }
+
 .borders::after,
 .borders::before,
+.footer::before,
 .slope-white-bottom::after,
-.slope-white-bottom::before {
+.slope-white-top::before {
   position: absolute;
   right: 0;
   left: 0;
@@ -41,12 +87,14 @@ h5 {
   bottom: 0;
   background-image: url("../images/white-bottom.svg");
 }
+
 .slope-white-top::before {
   top: 0;
   background-image: url("../images/white-top.svg");
 }
 
-.borders::before {
+.borders::before,
+.footer::before {
   top: -100px;
 }
 
@@ -55,19 +103,20 @@ h5 {
 }
 
 .block1::before {
-  background-image: url("../images/top.svg");
+  background-image: url("../images/block1-top.svg");
 }
 
 .block1::after {
-  background-image: url("../images/bottom.svg");
+  background-image: url("../images/block1-bottom.svg");
 }
 
-.block2::before {
-  background-image: url("../images/top.svg");
+.block2::before,
+.footer::before {
+  background-image: url("../images/block2-top.svg");
 }
 
 .block2::after {
-  background-image: url("../images/top.svg");
+  background-image: url("../images/block2-bottom.svg");
 }
 
 .bg-primary {
@@ -86,17 +135,10 @@ h5 {
   color: $secondary!important;
 }
 
-.bg-tertiary {
-  background-color: $tertiary!important;
-}
-
-.text-tertiary {
-  color: $tertiary!important;
-}
-
+.bg-block a,
+.bg-logo a,
 .bg-primary a,
-.bg-secondary a,
-.bg-tertiary a {
+.bg-secondary a {
   color: white!important;
 }
 
@@ -105,51 +147,29 @@ h5 {
 }
 
 .btn-primary {
-  background-color: $primary;
-  border-color: $primary;
+  color: #fff;
+  background-color: $button;
+  border-color: $button;
+  box-shadow: 0 5px 20px -6px rgba(7,145,11,0.65);
 }
 
 .btn-primary:focus,
 .btn-primary:hover {
-  color: $primary;
+  color: $button!important;
   background-color: white;
 }
 
-.btn-secondary {
-  color: #fff;
-  background-color: $secondary;
-  border-color: $secondary;
-}
-
-.btn-secondary:focus,
-.btn-secondary:hover {
-  color: $secondary;
+.btn-outline-primary {
+  color: $button;
   background-color: white;
+  border-color: $button;
 }
 
-.btn-tertiary {
-  color: #fff;
-  background-color: $tertiary;
-  border-color: $tertiary;
-  box-shadow: 0 5px 20px -6px rgba(7,145,11,0.65);
-}
-
-.btn-tertiary:focus,
-.btn-tertiary:hover {
-  color: $tertiary;
-  background-color: white;
-}
-
-.btn-outline-tertiary {
-  color: $tertiary;
-  background-color: white;
-  border-color: $tertiary;
-}
-
-.btn-outline-tertiary:focus,
-.btn-outline-tertiary:hover {
+.btn-outline-primary:focus,
+.btn-outline-primary:hover {
   color: white;
-  background-color: $tertiary;
+  color: $button;
+  background-color: $button;
 }
 
 .bg-image {
@@ -211,10 +231,10 @@ section {
   height: auto;
 }
 
+.bg-block,
 .bg-image,
 .bg-primary,
-.bg-secondary,
-.bg-tertiary {
+.bg-secondary {
   color: white;
 
   h1,
@@ -226,10 +246,10 @@ section {
     color: white;
   }
 }
-$slope: 130px;
+$slope: 200px;
 
-.home-welcome {
-  padding-bottom: $slope;
+.pb-s {
+  padding-bottom: $slope!important;
 }
 
 .free {
@@ -261,7 +281,7 @@ $slope: 130px;
 }
 
 .icons.color li::before {
-  color: $tertiary;
+  color: $logo;
 }
 
 .box {

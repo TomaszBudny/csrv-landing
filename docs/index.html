@@ -15,18 +15,18 @@
   <link rel="stylesheet" href="styles/bootstrap.min.css">
   <link rel="stylesheet" href="styles/main.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7COpen+Sans" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navigation">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <!-- Add your site or application content here -->
 
-  <header class="banner">
-    <div class="w-100 bg-primary">
+  <header class="banner fixed-top shadow">
+    <div class="w-100 bg-logo">
       <div class="container">
         <ul class="nav justify-content-end">
           <li class="nav-item"><a href="" class="nav-link">Logowanie</a></li>
@@ -37,7 +37,7 @@
     </div>
     <div class="w-100 bg-white">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light highlight-active" aria-label="main navigation">
+        <nav class="navbar navbar-expand-lg navbar-light highlight-active p-0" aria-label="main navigation">
           <a class="navbar-brand" href="#" rel="home">
             <img src="images/logo-primary.png" class="img-fluid" alt="Craftserve">
           </a>
@@ -47,18 +47,18 @@
           <span class="bottom"></span>
         </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto" id="navigation">
               <li class="nav-item">
-                <a class="nav-link" href="#">Start</a>
+                <a class="nav-link" href="#start">Start</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Dlaczego my?</a>
+                <a class="nav-link" href="#why">Dlaczego my?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Mapa</a>
+                <a class="nav-link" href="#map">Mapa</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Oferta</a>
+                <a class="nav-link" href="#offer">Oferta</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Screenshoty</a>
@@ -75,7 +75,7 @@
       </div>
     </div>
   </header>
-  <section class="home-welcome bg-image position-relative slope-white-bottom d-flex">
+  <section id="start" class="home-welcome bg-image position-relative slope-white-bottom d-flex pb-s">
     <div class="container align-self-center text-center">
       <h1>Darmowe serwery Minecraft<small class="d-block">Najmocniejsze serwery na rynku całkowicie za darmo</small></h1>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -88,8 +88,8 @@
         <h2 class="text-uppercase">SERWER FREE</h2>
       </header>
       <ul class="icons color two pros no-styling">
-        <li> 110% CPU, 4 GB RAM</li>
-        <li> 1 GB dysku SSD</li>
+        <li>110% CPU, 4 GB RAM</li>
+        <li>1 GB dysku SSD</li>
         <li>Łatwe ulepszanie paramterów</li>
         <li>Pluginy, mody, modpacki</li>
         <li>123 silników do wyboru</li>
@@ -107,12 +107,12 @@
     </div>
   </section>
 
-  <div class="container shadow p-5 d-flex justify-content-center">
-    <h2 class="m-0">Szukasz tańszego serwera 24/7?</h2>
-    <a href="" class="btn btn-outline-tertiary ml-3">Sprawdż pakiety DIRT i GRASS</a>
+  <div class="container shadow p-5 d-flex justify-content-center myb">
+    <h2 class="m-0 h3 text-primary font-weight-bold">Szukasz tańszego serwera 24/7?</h2>
+    <a href="" class="btn btn-outline-primary ml-3">Sprawdż pakiety DIRT i GRASS</a>
   </div>
 
-  <section class="bg-primary clearfix ">
+  <section id="why" class="bg-block position-relative borders block1 clearfix">
     <div class="container py-5">
       <header>
         <h2>Jakie <strong>zalety</strong> ma Craftserve?<small class="d-block">Oto dlaczego mamy przewagę nad konkurencją!</small></h2>
@@ -145,7 +145,7 @@
       </ul>
     </div>
   </section>
-
+  <!--
   <div class="container">
     <div class="row p-5">
       <div class="col-md-8 d-flex">
@@ -187,43 +187,46 @@
       </div>
     </div>
   </div>
+-->
 
-  <section class="bg-primary trust text-center position-relative borders block1">
+  <div class="container py-5 cta text-center">
+    <header>
+      <h2>Załóż <strong>darmowy</strong> serwer <strong>już teraz!</strong></h2>
+    </header>
+    <a href="" class="btn btn-primary">Wypróbuj za darmo!</a>
+  </div>
+
+
+  <section class="bg-block trust text-center position-relative borders block2">
     <div class="container py-5">
       <header>
         <h2>Czy warto nam <strong>zaufać</strong> ma Craftserve?<small class="d-block">Poniższe liczby mówią same za siebie.</small></h2>
       </header>
       <div class="row">
         <div class="col-md-4">
-          <span class="text-secondary display-3 font-weight-bold d-block">223 878</span>
+          <span class="text-numbers display-3 font-weight-bold d-block">223 878</span>
           <span>Zweryfikowanych użytkowników</span>
         </div>
         <div class="col-md-4">
-          <span class="text-secondary display-3 font-weight-bold d-block">610 873</span>
+          <span class="text-numbers display-3 font-weight-bold d-block">610 873</span>
           <span>Utworzonych serwerów</span>
         </div>
         <div class="col-md-4">
-          <span class="text-secondary display-3 font-weight-bold d-block">19 826</span>
+          <span class="text-numbers display-3 font-weight-bold d-block">19 826</span>
           <span>Graczy w ciągu ostatnich 24 godzin</span>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="cta">
-    <div class="container py-5">
-      <header>
-        <h2>Załóż <strong>darmowy</strong> serwer <strong>już teraz!</strong></h2>
-      </header>
-      <a href="" class="btn btn-primary">Wypróbuj za darmo!</a>
-    </div>
-  </div>
 
-  <section class="bg-primary bg-image vps">
+  <section class="bg-primary bg-image vps position-relative slope-white-bottom mt-5 pb-s">
     <div class="container py-5">
       <header>
         <h2>Technologia VPS w znacznie bardziej przystępnej cenie</h2>
       </header>
+      <p class="my-5"> Nasze serwery korzystają z tej samej technologii separacji i przydzielania zasobów co serwery VPS, jednak oferują znacznie prostszą obsługę. W połączeniu z domeną .pl zakupioną jednym kliknieciem w Craftserve, badź od innej firmy Twój serwer Minecraft
+        będzie działał i prezentował się bardzo profesjonalnie, co z pewnością zachęci graczy. </p>
       <footer class="text-center">
         <a href="" class="btn btn-primary">Dynamiczny<br />Procesor</a>
         <a href="" class="btn btn-primary mx-5">Dynamiczny<br />Procesor</a>
@@ -232,7 +235,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="map">
     <header>
       <h2>Mapa</h2>
     </header>
@@ -261,14 +264,27 @@
       </div>
     </div>
   </section>
-  <section class="offer">
-    <div class="container py-5">
+
+  <section class="bg-primary bg-image vps position-relative slope-white-top">
+    <div class="container ddos">
       <header>
-        <h2>Alternatywne płatne pakiety</h2>
+        <h2>Niezniszczalne serwery z <strong>Anti-DDOS</strong></h2>
       </header>
-      <div class="row">
+      <p>Wszystkie nasze serwery są zabezpieczone naszym autorskim systemem Anty-DDOS stworzonym specjalnie dla serwerów Minecraft. Ten system zatrzymuje wiele rodzajów ataków na twój serwer na poziomie protokołu gry - nie jest to gotowe rozwiązanie dla
+        wszystkich gier.</p>
+    </div>
+  </section>
+
+
+
+  <section id="offer" class="offer">
+    <div class="container py-5 px-0">
+      <header>
+        <h2 class="mb-5">Alternatywne płatne pakiety</h2>
+      </header>
+      <div class="row no-gutters">
         <div class="col-md-6">
-          <div class="m-3 shadow p-4">
+          <div class="mr-3 shadow p-4">
             <h2>Serwer FRIENDS</h2>
             <p>Tani serwer do gry z przyjaciółmi, bez modów</p>
             <ul class="no-styling pros icons color">
@@ -287,16 +303,16 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="m-3 shadow p-4">
-            <h2>Serwer FRIENDS</h2>
+          <div class="ml-3 shadow p-4">
+            <h2>Serwer DIAMOND</h2>
             <p>Tani serwer do gry z przyjaciółmi, bez modów</p>
             <ul class="no-styling pros icons color">
               <li>Dostępny 24/7</li>
-              <li>150% CPU, 4 GB RAM</li>
-              <li>2 GB dysku SSD</li>
-              <li>Do 10 graczy online</li>
-              <li class="nope">Bez obsługi modów</li>
-              <li class="nope">Limit 10 pluginów</li>
+              <li>200% CPU, do 32 GB RAM</li>
+              <li>10 GB dysku SSD</li>
+              <li>Do 300 graczy online</li>
+              <li>Priorytetowe wsparcie</li>
+              <li>Bez limitu modów i pluginów</li>
             </ul>
             <p class="text-right"><a href="">Więcej informacji</a></p>
             <footer>
@@ -309,7 +325,7 @@
     </div>
   </section>
 
-  <section class="container py-5 shadow text-center">
+  <section class="domain container p-5 shadow text-center">
     <header>
       <h2>Potrzebujesz <strong>własnej domeny?</strong></h2>
     </header>
@@ -319,21 +335,25 @@
     <a href="" class="btn btn-primary">Stwórz darmowy serwer</a>
   </section>
 
-  <div class="bg-primary py-5 text-center my-5">
-    <h2>Odwiedź nas na Discord<small class="d-block">Dołącz do <strong>234</strong> osób online!</small></h2>
+  <div class="discord bg-secondary py-5 d-flex justify-content-center">
+    <img src="https://craftserve.github.io/nowy-landing/icons/discord.svg" alt="">
+    <div class="pl-3">
+      <h2 class="font-weight-bold">Odwiedź nas na Discord</h2>
+      <p class="m-0">Dołącz do <strong>234</strong> osób online!</p>
+    </div>
   </div>
 
-  <section class="container py-5 text-center">
+  <section class="help container text-center">
     <header>
-      <h2>Potrzebujesz pomocy?</h2>
+      <h2 class="h1 font-weight-bold text-primary">Potrzebujesz pomocy?</h2>
     </header>
     <p>Jeśli nie masz pewności jaka oferta w pełni spełni Twoje oczekiwania - napisz do nas. Z chęcią odpowiemy na Twoje pytania i <strong>pomożemy Ci</strong> wybrać optymalną ofertę! :)</p>
     <p><strong>Czekamy na twoją wiadomość!</strong></p>
     <a href="" class="btn btn-primary">Stwórz darmowy serwer</a>
   </section>
 
-  <footer>
-    <div class="bg-secondary">
+  <footer class="footer position-relative">
+    <div class="bg-secondary pt-5">
       <ul class="nav justify-content-center pb-3">
         <li class="nav-item">
           <a class="nav-link" href="#">Start</a>
@@ -361,9 +381,8 @@
     <div class="bg-primary py-5">
       <div class="container d-flex justify-content-between align-items-center">
         <a class="navbar-brand" href="#" rel="home">
-        <img src="images/logo-secondary.png" class="img-fluid" alt="Craftserve">
-      </a>
-
+          <img src="images/logo-secondary.png" class="img-fluid" alt="Craftserve">
+        </a>
         <span>Craftserve © 2018</span>
       </div>
     </div>
@@ -374,8 +393,8 @@
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
   </script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
