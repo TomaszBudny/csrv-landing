@@ -1,6 +1,7 @@
-$primary: #2A6650;
+$primary: #00753F;
 $secondary: #5CB089;
 $tertiary: #00BF66;
+$headers: #0D9958;
 
 body {
   overflow-x: hidden;
@@ -11,7 +12,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: $primary;
+  color: $headers;
   font-family: 'Lato', sans-serif;
 }
 
@@ -139,7 +140,7 @@ section {
     text-align: center;
   }
 
-  .footer {
+  footer {
     position: absolute;
     right: 0;
     left: 0;
