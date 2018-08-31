@@ -132,7 +132,6 @@ h5 {
 
 img.shadow {
   padding: 10px;
-  margin: 30px;
 }
 
 section {
@@ -153,6 +152,11 @@ section {
   }
 }
 
+.container img {
+  max-width: 100%;
+  height: auto;
+}
+
 .bg-image,
 .bg-primary,
 .bg-secondary,
@@ -167,11 +171,6 @@ section {
   h6 {
     color: white;
   }
-}
-
-.container.shadow {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 .slope-after,
@@ -235,76 +234,7 @@ $slope: 130px;
   color: $tertiary;
 }
 
-.trust {
-  .text-primary {
-    font-weight: 900;
-    font-size: 4rem;
-    display: block;
-  }
-}
 
-.top {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-
-  .one {
-    width: 50%;
-    height: 200px;
-    overflow: hidden;
-    float: left;
-    background-image: url("../images/top-left-light.svg");
-    background-position: bottom right;
-    background-size: 2000px 200px;
-    position: absolute;
-    top: -200px;
-  }
-
-  .two {
-    width: 50%;
-    height: 200px;
-    overflow: hidden;
-    float: left;
-    background-image: url("../images/bottom-right-dark.svg");
-    background-position: top left;
-    background-size: 2000px 200px;
-    position: absolute;
-    top: -0;
-    left: 50%;
-  }
-}
-.bottom {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  .one {
-    width: 50%;
-    height: 200px;
-    overflow: hidden;
-    float: left;
-    background-image: url("../images/top-left-dark.svg");
-    background-position: bottom right;
-    background-size: 2000px 200px;
-    position: absolute;
-    top: -200px;
-  }
-
-  .two {
-    width: 50%;
-    height: 200px;
-    overflow: hidden;
-    float: left;
-    background-image: url("../images/bottom-right-light.svg");
-    background-position: top left;
-    background-size: 2000px 200px;
-    position: absolute;
-    top: -0;
-    left: 50%;
-  }
-}
 
 .box {
   position: absolute;
