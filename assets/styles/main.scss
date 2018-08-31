@@ -5,23 +5,68 @@ $block: #5CB089;
 $button: #00BF66;
 $logo: #0C7235;
 $numbers: #2A6650;
+
+a,
+a:focus,
+a:hover {
+  color: $button;
+}
+
+.banner .bg-logo .nav-link {
+  border-bottom: 3px solid transparent;
+  transition: all 0.4s;
+}
+
+.banner .bg-logo .nav-link:focus,
+.banner .bg-logo .nav-link:hover {
+  border-bottom: 3px solid white;
+}
+
 .text-numbers {
   color: $numbers;
+  font-family: 'Lato', sans-serif;
 }
-.help, .domain, .myb {
+
+.domain,
+.help,
+.myb {
   margin-top: 9rem!important;
   margin-bottom: 9rem!important;
 }
+
+.pyb {
+  padding-top: 9rem!important;
+  padding-bottom: 9rem!important;
+}
+
+.block1 {
+  .container {
+    max-width: 1350px;
+  }
+
+  li {
+    font-size: 0.9rem;
+  }
+}
+
+.h2,
+h2 {
+  font-size: 3rem;
+}
+
 .ddos {
   padding-top: 300px;
   padding-bottom: 100px;
 }
+
 .container p {
   font-size: 1.1rem;
 }
+
 .discord {
   padding: 4rem 0;
 }
+
 .bg-logo {
   background-color: $logo;
   color: white;
@@ -50,11 +95,18 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   color: $headers;
   font-family: 'Lato', sans-serif;
 }
@@ -157,6 +209,7 @@ h5 {
 .btn-primary:hover {
   color: $button!important;
   background-color: white;
+  border-color: $button;
 }
 
 .btn-outline-primary {
@@ -168,8 +221,12 @@ h5 {
 .btn-outline-primary:focus,
 .btn-outline-primary:hover {
   color: white;
-  color: $button;
   background-color: $button;
+  border-color: $button;
+}
+
+.btn-lg {
+  border-width: 2px;
 }
 
 .bg-image {
@@ -187,10 +244,11 @@ h5 {
 }
 
 .home-welcome {
-  min-height: 35vw;
+  min-height: 80vh;
   background-image: url("../images/screenshot.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .vps {
@@ -198,6 +256,7 @@ h5 {
   background-image: url("../images/screenshot.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .shadow {
@@ -213,14 +272,6 @@ section {
     text-align: center;
   }
 
-  footer {
-    position: absolute;
-    right: 0;
-    left: 0;
-    text-align: right;
-    padding: 0 2rem;
-  }
-
   .container {
     position: relative;
   }
@@ -229,6 +280,19 @@ section {
 .container img {
   max-width: 100%;
   height: auto;
+}
+
+footer.position-absolute {
+  right: 0;
+  left: 0;
+  text-align: right;
+  padding: 0 2rem;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+footer small {
+  font-size: 60%;
 }
 
 .bg-block,
@@ -263,26 +327,70 @@ $slope: 200px;
   list-style: none;
 }
 
+.border-me li {
+  border: 1px solid #E9E9E9;
+  border-bottom: none;
+  padding: 0.7rem 15px;
+}
+.fa-discord {
+  font-size: 6rem;
+}
+.border-me li:last-of-type {
+  border-bottom: 1px solid #E9E9E9;
+}
 .two li {
-  width: 50%;
-  float: left;
+  border: 1px solid #E9E9E9;
+  border-bottom: none;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  -ms-flex: 0 0 calc(50% - 30px);
+  flex: 0 0 calc(50% - 30px);
+  max-width: calc(50% - 30px);
+}
+
+.two li:nth-of-type(2n) {
+  margin-left: 15px;
+}
+
+.two li:nth-of-type(2n+1) {
+  margin-right: 15px;
+}
+
+.two li:nth-last-of-type(1),
+.two li:nth-last-of-type(2) {
+  border-bottom: 1px solid lightgray;
 }
 
 .icons li::before {
   font-family: "Font Awesome 5 Free";
   content: "\f14a";
-  margin-right: 0.4rem;
+  margin-right: 0.5rem;
   font-size: 1.2rem;
   font-weight: 900;
+}
+
+.footer .bg-secondary a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f45c";
+  margin-right: 0.5rem;
+  font-weight: 900;
+  color: $primary;
+}
+
+.footer .bg-secondary a {
+  padding-left: 1rem;
+  font-size: 1.1rem;
+}
+.footer .bg-secondary {
+  padding-top: 10rem;
+}
+.icons.color li::before {
+  color: #72D762;
 }
 
 li.nope::before {
   content: "\f00d";
   color: red!important;
-}
-
-.icons.color li::before {
-  color: $logo;
 }
 
 .box {

@@ -1,0 +1,78 @@
+(function($) {
+
+  var navTop = {
+    position: null
+  };
+  var navBottom = {
+    position: null
+  };
+
+  var fixedNav = function(nav, placement, navObject, marginObject) {
+
+    if (placement === 'top') {
+      if (navObject.position === null) {
+        navObject.position = nav.position().top;
+      }
+      if ($(window).scrollTop() >= navObject.position) {
+        nav.addClass('fixed-top');
+        if (marginObject !== undefined && !marginObject.hasClass('margin-adjusted')) {
+          marginObject.css('margin-bottom', nav.outerHeight()).addClass('margin-adjusted');
+        }
+      } else {
+        nav.removeClass('fixed-top');
+        if (marginObject !== undefined && marginObject.hasClass('margin-adjusted')) {
+          marginObject.removeAttr('style').removeClass('margin-adjusted');
+        }
+      }
+    } else {
+      if (navObject.position === null) {
+        navObject.position = nav.position().top + nav.outerHeight();
+      }
+      if ($(window).scrollTop() + $(window).height() >= navObject.position) {
+        nav.addClass('fixed-bottom');
+        if (marginObject !== undefined && !marginObject.hasClass('margin-adjusted')) {
+          marginObject.css('margin-bottom', nav.outerHeight()).addClass('margin-adjusted');
+        }
+      } else {
+        nav.removeClass('fixed-bottom');
+        if (marginObject !== undefined && marginObject.hasClass('margin-adjusted')) {
+          marginObject.removeAttr('style').removeClass('margin-adjusted');
+        }
+      }
+    }
+  };
+
+  var resetFixedNav = function(nav, placement, navObject, marginObject) {
+    nav.removeClass('fixed-' + placement);
+    navObject.position = null;
+    if (marginObject !== undefined) {
+      marginObject.removeClass('margin-adjusted');
+    }
+    fixedNav(nav, placement, navObject, marginObject);
+  };
+
+
+  $(document).ready(function() {
+
+    fixedNav($('.header-navigation'), 'top', navTop, $('header.banner'));
+
+    $(window).load(function() {
+      resetFixedNav($('.header-navigation'), 'top', navTop, $('header.banner'));
+    });
+
+    $(window).scroll(function() {
+      fixedNav($('.header-navigation'), 'top', navTop, $('header.banner'));
+    });
+
+  });
+
+  var resizeTimer;
+
+  $(window).resize(function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      resetFixedNav($('.header-navigation'), 'top', navTop, $('header.banner'));
+    }, 300);
+  });
+
+})(jQuery);
