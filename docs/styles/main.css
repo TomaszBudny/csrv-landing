@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .text-numbers { color: #2A6650; }
 
 .help, .domain, .myb { margin-top: 9rem !important; margin-bottom: 9rem !important; }
@@ -95,9 +94,9 @@ section .container { position: relative; }
 
 .two li { width: 50%; float: left; }
 
-.icons li::before { font-family: "Font Awesome 5 Free"; content: "\f14a"; margin-right: 0.4rem; font-size: 1.2rem; }
+.icons li::before { font-family: "Font Awesome 5 Free"; content: "\f14a"; margin-right: 0.4rem; font-size: 1.2rem; font-weight: 900; }
 
-.nope::before { content: "" !important; color: red !important; }
+li.nope::before { content: "\f00d"; color: red !important; }
 
 .icons.color li::before { color: #0C7235; }
 

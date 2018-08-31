@@ -273,10 +273,11 @@ $slope: 200px;
   content: "\f14a";
   margin-right: 0.4rem;
   font-size: 1.2rem;
+  font-weight: 900;
 }
 
-.nope::before {
-  content: "\f00d"!important;
+li.nope::before {
+  content: "\f00d";
   color: red!important;
 }
 
