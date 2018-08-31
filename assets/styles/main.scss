@@ -16,6 +16,19 @@ h5 {
   font-family: 'Lato', sans-serif;
 }
 
+.border1::before {
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 200px;
+  content: " ";
+  display: block;
+  background-image: url("images/top.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .bg-primary {
   background-color: $primary!important;
 }
@@ -213,7 +226,7 @@ $slope: 130px;
   list-style: none;
 }
 
-.pros li {
+.two li {
   width: 50%;
   float: left;
 }
@@ -233,8 +246,6 @@ $slope: 130px;
 .icons.color li::before {
   color: $tertiary;
 }
-
-
 
 .box {
   position: absolute;
