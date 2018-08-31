@@ -10,9 +10,9 @@ var ASSETS = {
 };
 
 var DIST = {
-  root  : 'dist/',
-  css   : 'dist/styles',
-  js    : 'dist/scripts'
+  root  : 'docs/',
+  css   : 'docs/styles',
+  js    : 'docs/scripts'
 };
 
 gulp.task('sass', function(){
