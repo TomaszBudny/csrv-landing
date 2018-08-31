@@ -1,4 +1,4 @@
-$primary: #00753F;
+$primary: #31845D;
 $secondary: #5CB089;
 $tertiary: #00BF66;
 $headers: #0D9958;
@@ -15,18 +15,59 @@ h5 {
   color: $headers;
   font-family: 'Lato', sans-serif;
 }
-
-.border1::before {
+.scrollprotection {
+  position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.borders::after,
+.borders::before,
+.slope-white-bottom::after,
+.slope-white-bottom::before {
+  position: absolute;
   right: 0;
   left: 0;
   height: 200px;
   content: " ";
   display: block;
-  background-image: url("images/top.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.slope-white-bottom::after {
+  bottom: 0;
+  background-image: url("../images/white-bottom.svg");
+}
+.slope-white-top::before {
+  top: 0;
+  background-image: url("../images/white-top.svg");
+}
+
+.borders::before {
+  top: -100px;
+}
+
+.borders::after {
+  bottom: -100px;
+}
+
+.block1::before {
+  background-image: url("../images/top.svg");
+}
+
+.block1::after {
+  background-image: url("../images/bottom.svg");
+}
+
+.block2::before {
+  background-image: url("../images/top.svg");
+}
+
+.block2::after {
+  background-image: url("../images/top.svg");
 }
 
 .bg-primary {
@@ -184,30 +225,6 @@ section {
   h6 {
     color: white;
   }
-}
-
-.slope-after,
-.slope-before {
-  position: relative;
-}
-
-.slope-after::after,
-.slope-before::before {
-  position: absolute;
-  content: " ";
-  display: block;
-  left: 0;
-  right: 0;
-  border-style: solid;
-}
-
-.slope-white.slope-after::after {
-  border-color: transparent transparent white transparent;
-}
-
-.slope-after::after {
-  bottom: 0;
-  border-width: 0 100vw 150px 0;
 }
 $slope: 130px;
 
