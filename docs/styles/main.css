@@ -22,7 +22,7 @@ a, a:focus, a:hover { color: #00BF66; }
 
 .text-numbers { color: #2A6650; font-family: 'Lato', sans-serif; }
 
-.domain, .help, .myb { margin-top: 9rem !important; margin-bottom: 9rem !important; }
+.help, .myb { margin-top: 9rem !important; margin-bottom: 9rem !important; }
 
 .pyb { padding-top: 9rem !important; padding-bottom: 9rem !important; }
 
