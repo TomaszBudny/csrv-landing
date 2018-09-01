@@ -1,5 +1,19 @@
 a, a:focus, a:hover { color: #00BF66; }
 
+#diamond .square1 { width: 20px; height: 20px; right: -20px; top: 60px; z-index: 1; }
+
+#diamond .square2 { width: 50px; height: 50px; right: -10px; top: -10px; z-index: 1; }
+
+#diamond .square3 { width: 40px; height: 40px; right: 60px; top: -20px; z-index: 1; }
+
+#diamond .square4 { width: 20px; height: 20px; left: 0; bottom: 60px; z-index: 1; }
+
+#diamond .square5 { width: 50px; height: 50px; left: -10px; bottom: -10px; z-index: 1; }
+
+#diamond .square6 { width: 40px; height: 40px; left: 60px; bottom: -20px; z-index: 1; }
+
+.diamond { background: #E5F8EF; }
+
 .banner .bg-logo .nav-link { border-bottom: 3px solid transparent; transition: all 0.4s; }
 
 .banner .bg-logo .nav-link:focus, .banner .bg-logo .nav-link:hover { border-bottom: 3px solid white; }
@@ -106,15 +120,23 @@ footer small { font-size: 60%; }
 
 .pb-s { padding-bottom: 200px !important; }
 
+.form-control, .input-group-text { border-radius: 0 !important; }
+
+.input-group-text { padding: 0.375rem 1rem; font-size: 1.5rem; }
+
+.input-group { max-width: 450px; margin: 0 auto; }
+
+.form-control { padding: 0.7rem 0.75rem; }
+
+.input-group-text { background: white; color: #00BF66; }
+
 .free { margin-top: -200px !important; background: white; }
 
 .no-styling { margin: 0; padding: 0; list-style: none; }
 
-.border-me li { border: 1px solid #E9E9E9; border-bottom: none; padding: 0.7rem 15px; }
+.border-me li { border-bottom: none; padding: 0.7rem 15px; }
 
 .fa-discord { font-size: 6rem; }
-
-.border-me li:last-of-type { border-bottom: 1px solid #E9E9E9; }
 
 .two li { border: 1px solid #E9E9E9; border-bottom: none; padding-top: 0.7rem; padding-bottom: 0.7rem; flex: 0 0 calc(50% - 30px); max-width: calc(50% - 30px); }
 

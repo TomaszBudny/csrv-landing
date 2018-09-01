@@ -80,8 +80,13 @@
   <section id="start" class="home-welcome bg-image position-relative slope-white-bottom d-flex pb-s">
     <div class="container align-self-center text-center">
       <h1 class="font-weight-bold">Darmowe serwery Minecraft<small class="d-block">Najmocniejsze serwery na rynku całkowicie za darmo</small></h1>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <a href="" class="btn btn-primary">Stwórz darmowy serwer</a>
+      <div class="input-group my-4">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="Wpisz swój adres email" aria-label="email">
+      </div>
+      <a href="" class="btn btn-primary btn-lg">Stwórz darmowy serwer</a>
     </div>
   </section>
   <section>
@@ -110,7 +115,7 @@
   </section>
 
   <div class="container shadow p-5 d-flex justify-content-center myb align-items-center">
-    <h2 class="m-0 h3 text-primary font-weight-bold">Szukasz tańszego serwera 24/7?</h2>
+    <h2 class="m-0 h3 text-primary font-weight-bold">Szukasz dobrego serwera 24/7?</h2>
     <a href="" class="btn btn-outline-primary ml-3 btn-lg font-weight-bold">Sprawdż pakiety DIRT i GRASS</a>
   </div>
 
@@ -256,7 +261,8 @@
       <div class="col-md-6 d-flex">
         <div class="align-self-center text-right">
           <h2>Setki <strong>gotowych modów</strong></h2>
-          <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor.</p>
+          <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a,
+            convallis ac, laoreet enim. Phasellus fermentum in, dolor.</p>
           <a href="" class="btn btn-primary">Zobacz przykładowy podgląd!</a>
         </div>
       </div>
@@ -283,10 +289,10 @@
   <section id="offer" class="offer my-5">
     <div class="container py-5 px-0">
       <header>
-        <h2 class="mb-5">Alternatywne płatne pakiety</h2>
+        <h2 class="mb-5">Płatne pakiety</h2>
       </header>
       <div class="row no-gutters">
-        <article class="col-md-6 h-100">
+        <article class="col-md-6 py-5">
           <div class="mr-3 shadow p-5 position-relative">
             <h2 class="h3 font-weight-bold">Serwer FRIENDS</h2>
             <p>Tani serwer do gry z przyjaciółmi, bez modów</p>
@@ -300,13 +306,13 @@
             </ul>
             <p class="text-right"><small><a href=""><i class="far fa-question-circle"></i> Więcej informacji</a></small></p>
             <footer class="position-absolute d-flex justify-content-end align-items-center">
-              <span class="font-weight-bold h2 mb-0 mr-3">0<small>zł/mc</small></span>
+              <span class="font-weight-bold h2 mb-0 mr-3">9,99<small>zł/mc</small></span>
               <a href="" class="btn btn-primary btn-lg">Aktywuj teraz</a>
             </footer>
           </div>
         </article>
-        <article class="col-md-6 h-100">
-          <div class="ml-3 shadow p-5 position-relative">
+        <article class="col-md-6 ">
+          <div class="ml-3 shadow h-100 p-5 position-relative diamond">
             <h2 class="h3 font-weight-bold">Serwer DIAMOND</h2>
             <p>Ten serwer poradzi sobie z każdym zadaniem</p>
             <ul class="no-styling pros icons color border-me mb-3">
@@ -314,12 +320,13 @@
               <li>200% CPU, do 32 GB RAM</li>
               <li>10 GB dysku SSD</li>
               <li>Do 300 graczy online</li>
+              <li>Brak limitu pluginów</li>
+              <li>Obsługa modyfikacji</li>
               <li>Priorytetowe wsparcie</li>
-              <li>Bez limitu modów i pluginów</li>
             </ul>
             <p class="text-right"><small><a href=""><i class="far fa-question-circle"></i> Więcej informacji</a></small></p>
             <footer class="position-absolute d-flex justify-content-end align-items-center">
-              <span class="font-weight-bold h2 mb-0 mr-3">0<small>zł/mc</small></span>
+              <span class="font-weight-bold h2 mb-0 mr-3">29,99<small>zł/mc</small></span>
               <a href="" class="btn btn-primary btn-lg">Aktywuj teraz</a>
             </footer>
           </div>
@@ -327,6 +334,81 @@
       </div>
     </div>
   </section>
+
+  <section class="offer my-5">
+    <div class="container py-5 px-0">
+      <header>
+        <h2 class="mb-5">Nasze Pakiety</h2>
+      </header>
+      <div class="row no-gutters">
+        <article class="col-md-4">
+          <div class="mr-3 shadow py-5 px-3 position-relative">
+            <h2 class="h3 font-weight-bold">Serwer FREE</h2>
+            <p>Tani serwer do gry z przyjaciółmi, bez modów</p>
+            <ul class="no-styling pros icons color border-me mb-3">
+              <li class="nope">Dostępny w godzinach niskiego ruchu</li>
+              <li>110% CPU, 4 GB RAM</li>
+              <li>1 GB dysku SSD</li>
+              <li>Do 3 graczy online</li>
+              <li class="nope">Bez obsługi modów</li>
+              <li class="nope">Serwer usuwany po 3 dniach nieaktywności</li>
+            </ul>
+            <p class="text-right"><small><a href=""><i class="far fa-question-circle"></i> Więcej informacji</a></small></p>
+            <p class="text-right mb-0"><span class="font-weight-bold h2 mb-0">0,00<small>zł/mc</small></span></p>
+            <footer class="position-absolute d-flex justify-content-end align-items-end flex-column px-3">
+              <a href="" class="btn btn-primary btn-lg">Aktywuj teraz</a>
+            </footer>
+          </div>
+        </article>
+        <article class="col-md-4">
+          <div class="mx-3 shadow py-5 px-3 position-relative">
+            <h2 class="h3 font-weight-bold">Serwer FRIENDS</h2>
+            <p>Tani serwer do gry z przyjaciółmi, bez modów</p>
+            <ul class="no-styling pros icons color border-me mb-3">
+              <li>Dostępny 24/7</li>
+              <li>150% CPU, 4 GB RAM</li>
+              <li>2 GB dysku SSD</li>
+              <li>Do 10 graczy online</li>
+              <li class="nope">Bez obsługi modów</li>
+              <li class="nope">Limit 10 pluginów</li>
+            </ul>
+            <p class="text-right"><small><a href=""><i class="far fa-question-circle"></i> Więcej informacji</a></small></p>
+            <p class="text-right mb-0"><span class="font-weight-bold h2 mb-0">9,99<small>zł/mc</small></span></p>
+            <footer class="position-absolute d-flex justify-content-end align-items-end flex-column px-3">
+              <a href="" class="btn btn-primary btn-lg">Aktywuj teraz</a>
+            </footer>
+          </div>
+        </article>
+        <article id="diamond" class="col-md-4 position-relative">
+          <span class="position-absolute d-block bg-primary square1"></span>
+          <span class="position-absolute d-block bg-primary square2"></span>
+          <span class="position-absolute d-block bg-primary square3"></span>
+          <div class="ml-3 shadow h-100 py-5 px-3 position-relative diamond">
+            <h2 class="h3 font-weight-bold">Serwer DIAMOND</h2>
+            <p>Ten serwer poradzi sobie z każdym zadaniem</p>
+            <ul class="no-styling pros icons color border-me mb-3">
+              <li>Dostępny 24/7</li>
+              <li>200% CPU, do 32 GB RAM</li>
+              <li>10 GB dysku SSD</li>
+              <li>Do 300 graczy online</li>
+              <li>Brak limitu pluginów</li>
+              <li>Obsługa modyfikacji</li>
+              <li>Priorytetowe wsparcie</li>
+            </ul>
+            <p class="text-right"><small><a href=""><i class="far fa-question-circle"></i> Więcej informacji</a></small></p>
+            <p class="text-right mb-0"><span class="font-weight-bold h2 mb-0">29,99<small>zł/mc</small></span></p>
+            <footer class="position-absolute d-flex justify-content-end align-items-end flex-column px-3">
+              <a href="" class="btn btn-primary btn-lg">Aktywuj teraz</a>
+            </footer>
+          </div>
+          <span class="position-absolute d-block bg-primary square4"></span>
+          <span class="position-absolute d-block bg-primary square5"></span>
+          <span class="position-absolute d-block bg-primary square6"></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
 
   <section class="domain container p-5 shadow text-center">
     <header>
@@ -338,10 +420,10 @@
     <a href="" class="btn btn-primary">Stwórz darmowy serwer</a>
   </section>
 
-  <div class="discord bg-secondary py-5 d-flex justify-content-center align-items-center px-5">
+  <div class="discord py-5 d-flex justify-content-center align-items-center px-5 bg-block trust position-relative borders block2">
     <i class="fab fa-discord"></i>
     <div class="pl-3">
-      <h2 class="font-weight-bold">Odwiedź nas na Discord</h2>
+      <a href=""><h2 class="font-weight-bold">Odwiedź nasz na Discord</h2></a>
       <p class="m-0 h5 text-white">Dołącz do <strong>234</strong> osób online!</p>
     </div>
   </div>
@@ -399,8 +481,8 @@
   </footer>
 
 
-  <script src="http://67.227.227.134/~tom/flc-sage/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
-  <script src="http://67.227.227.134/~tom/flc-sage/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+  <script src="scripts/jquery.js?ver=1.12.4"></script>
+  <script src="scripts/jquery-migrate.min.js?ver=1.4.1"></script>
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
   </script>
