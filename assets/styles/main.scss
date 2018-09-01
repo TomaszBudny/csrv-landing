@@ -7,10 +7,31 @@ $logo: #0C7235;
 $numbers: #2A6650;
 $greenicon: #72D762;
 
+.bg-block h2 strong {
+  color: $primary;
+}
+
+.overlay-a::after,
+.overlay-b::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(49,132,93,0.75);
+  content: " ";
+  display: block;
+}
+
 a,
 a:focus,
 a:hover {
   color: $button;
+}
+
+b,
+strong {
+  font-weight: 700;
 }
 
 .bg-block a,
@@ -21,7 +42,7 @@ a:hover {
 }
 
 .gray {
-  background-color: lightgray;
+  background-color: #F2F2F2;
   margin-top: 5vw;
   margin-bottom: 5vw;
 }
@@ -30,13 +51,20 @@ a:hover {
   pointer-events: none;
 }
 
+.square {
+  z-index: 2;
+}
+
+.square.bg-primary {
+  box-shadow: 0 5px 20px -6px rgba(49,132,93,0.65);
+}
+
 #diamond {
   .square1 {
     width: 20px;
     height: 20px;
     right: -20px;
     top: 60px;
-    z-index: 1;
   }
 
   .square2 {
@@ -44,7 +72,6 @@ a:hover {
     height: 50px;
     right: -10px;
     top: -10px;
-    z-index: 1;
   }
 
   .square3 {
@@ -52,7 +79,6 @@ a:hover {
     height: 40px;
     right: 60px;
     top: -20px;
-    z-index: 1;
   }
 
   .square4 {
@@ -60,7 +86,6 @@ a:hover {
     height: 20px;
     left: 0;
     bottom: 60px;
-    z-index: 1;
   }
 
   .square5 {
@@ -68,7 +93,6 @@ a:hover {
     height: 50px;
     left: -10px;
     bottom: -10px;
-    z-index: 1;
   }
 
   .square6 {
@@ -76,7 +100,6 @@ a:hover {
     height: 40px;
     left: 60px;
     bottom: -20px;
-    z-index: 1;
   }
 }
 
@@ -99,7 +122,6 @@ a:hover {
   font-family: 'Lato', sans-serif;
 }
 
-.help,
 .myb {
   margin-top: 9rem!important;
   margin-bottom: 9rem!important;
@@ -123,11 +145,6 @@ a:hover {
 .h2,
 h2 {
   font-size: 3rem;
-}
-
-.ddos {
-  padding-top: 300px;
-  padding-bottom: 100px;
 }
 
 .container p {
@@ -181,10 +198,12 @@ h6 {
   color: $headers;
   font-family: 'Lato', sans-serif;
 }
+
 .borders {
-  margin-top: 5vw;
-  margin-bottom: 5vw;
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
 }
+
 .borders::after,
 .borders::before,
 .footer::before,
@@ -201,6 +220,11 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
+}
+
+.position-relative .position-relative {
+  z-index: 1;
 }
 
 .slope-white-bottom::after {
@@ -213,12 +237,12 @@ h6 {
   background-image: url("../images/white-top.svg");
 }
 
-.gray::after {
+.gray-a::after {
   bottom: -5vw;
   background-image: url("../images/gray-top.svg");
 }
 
-.gray::before {
+.gray-b::before {
   top: -5vw;
   background-image: url("../images/gray-bottom.svg");
 }
@@ -302,10 +326,6 @@ h6 {
   border-width: 2px;
 }
 
-.bg-image {
-  color: white;
-}
-
 .navbar-brand img {
   max-height: 40px;
 }
@@ -316,20 +336,25 @@ h6 {
   }
 }
 
-.home-welcome {
-  min-height: 80vh;
-  background-image: url("../images/screenshot.jpg");
+.bg-image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.vps {
-  min-height: 20vw;
+.home-welcome {
+  min-height: 80vh;
   background-image: url("../images/screenshot.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.ddos {
+  min-height: 600px;
+  background-image: url("../images/screenshot.jpg");
+}
+
+.vps {
+  min-height: 600px;
+  background-image: url("../images/screenshot.jpg");
 }
 
 .shadow {
@@ -383,10 +408,14 @@ footer small {
     color: white;
   }
 }
-$slope: 6vw;
+$slope: 5vw;
 
 .pb-s {
   padding-bottom: $slope!important;
+}
+
+.pt-s {
+  padding-top: $slope!important;
 }
 
 .form-control,
@@ -414,8 +443,9 @@ $slope: 6vw;
 }
 
 .free {
-  margin-top: -$slope!important;
+  margin-top: -1-$slope!important;
   background: white;
+  z-index: 2;
 }
 
 .no-styling {
@@ -480,6 +510,7 @@ $slope: 6vw;
 .collapsed .fa-chevron-down {
   transform: rotate(-90deg);
 }
+
 .fa-chevron-down {
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s, -o-transform 0.3s ease 0s !important;
 }
