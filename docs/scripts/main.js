@@ -55,15 +55,25 @@
   $(document).ready(function() {
 
     fixedNav($('.header-navigation'), 'top', navTop, $('header.banner'));
+		fixedNav($('.cta-fixed'), 'bottom', navBottom, $('body'));
 
     $(window).load(function() {
       resetFixedNav($('.header-navigation'), 'top', navTop, $('header.banner'));
+      resetFixedNav($('.cta-fixed'), 'bottom', navBottom, $('body'));
     });
 
     $(window).scroll(function() {
       fixedNav($('.header-navigation'), 'top', navTop, $('header.banner'));
+      resetFixedNav($('.cta-fixed'), 'bottom', navBottom, $('body'));
     });
 
+    $(".map-protection").on("click", function() {
+      $(".map").removeClass("scrolling-off");
+    });
+
+    $(".map-protection").mouseleave(function() {
+      $(".map").addClass("scrolling-off");
+    });
   });
 
   var resizeTimer;
@@ -72,6 +82,7 @@
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function() {
       resetFixedNav($('.header-navigation'), 'top', navTop, $('header.banner'));
+      resetFixedNav($('.cta-fixed'), 'bottom', navBottom, $('body'));
     }, 300);
   });
   jQuery('a[href*=#]:not([href=#])').click(function() {

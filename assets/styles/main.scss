@@ -12,11 +12,22 @@ a:focus,
 a:hover {
   color: $button;
 }
+
 .bg-block a,
 .bg-logo a,
 .bg-primary a,
 .bg-secondary a {
   color: white;
+}
+
+.gray {
+  background-color: lightgray;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.scrolling-off {
+  pointer-events: none;
 }
 
 #diamond {
@@ -170,24 +181,21 @@ h6 {
   color: $headers;
   font-family: 'Lato', sans-serif;
 }
-
-.scrollprotection {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.borders {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
-
 .borders::after,
 .borders::before,
 .footer::before,
+.gray::after,
+.gray::before,
 .slope-white-bottom::after,
 .slope-white-top::before {
   position: absolute;
   right: 0;
   left: 0;
-  height: 200px;
+  height: 5vw;
   content: " ";
   display: block;
   background-position: center;
@@ -205,13 +213,25 @@ h6 {
   background-image: url("../images/white-top.svg");
 }
 
+.gray::after {
+  bottom: -5vw;
+  background-image: url("../images/gray-top.svg");
+}
+
+.gray::before {
+  top: -5vw;
+  background-image: url("../images/gray-bottom.svg");
+}
+
 .borders::before,
 .footer::before {
-  top: -100px;
+  top: 0;
+  transform: translateY(-50%);
 }
 
 .borders::after {
-  bottom: -100px;
+  bottom: 0;
+  transform: translateY(50%);
 }
 
 .block1::before {
@@ -246,7 +266,6 @@ h6 {
 .text-secondary {
   color: $secondary!important;
 }
-
 
 .btn {
   border-radius: 0;
@@ -364,7 +383,7 @@ footer small {
     color: white;
   }
 }
-$slope: 200px;
+$slope: 6vw;
 
 .pb-s {
   padding-bottom: $slope!important;
@@ -414,6 +433,7 @@ $slope: 200px;
 .discord .fa-discord {
   font-size: 6rem;
 }
+
 .border-me li:last-of-type {
   //border-bottom: 1px solid #E9E9E9;
 }
@@ -449,17 +469,22 @@ $slope: 200px;
   font-weight: 900;
 }
 
-.footer .bg-secondary a::before {
-  color: $primary;
-}
-.footer .nav a::before {
+.nav.square a::before {
   font-family: "Font Awesome 5 Free";
   content: "\f45c";
   margin-right: 0.5rem;
   font-weight: 900;
   color: $primary;
 }
-.footer .bg-primary a::before {
+
+.collapsed .fa-chevron-down {
+  transform: rotate(-90deg);
+}
+.fa-chevron-down {
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s, -o-transform 0.3s ease 0s !important;
+}
+
+.nav.square-white a::before {
   color: white;
 }
 
@@ -490,10 +515,12 @@ li.nope::before {
   width: 80px;
   height: 80px;
 }
+
 .testimonials-section {
   small {
     font-size: 50%;
   }
+
   .fa {
     color: $greenicon;
   }
