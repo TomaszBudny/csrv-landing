@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 281.704 801.652">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #fff;
+      }
+
+      .cls-1 {
+        stroke-width: 6px;
+      }
+
+      .cls-2 {
+        stroke-width: 8px;
+      }
+
+      .cls-3 {
+        stroke-width: 9px;
+      }
+
+      .cls-4 {
+        stroke-width: 7px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        filter: url(#Rectangle_31);
+      }
+
+      .cls-8 {
+        filter: url(#Rectangle_30);
+      }
+
+      .cls-9 {
+        filter: url(#Rectangle_29);
+      }
+
+      .cls-10 {
+        filter: url(#Rectangle_28);
+      }
+
+      .cls-11 {
+        filter: url(#Rectangle_27);
+      }
+
+      .cls-12 {
+        filter: url(#Rectangle_26);
+      }
+
+      .cls-13 {
+        filter: url(#Rectangle_25);
+      }
+    </style>
+    <filter id="Rectangle_25" x="157.13" y="261.397" width="122.016" height="122.016" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="9" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11.5" result="blur"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_26" x="0" y="322.564" width="170.603" height="170.603" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="9" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur-2"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_27" x="87.435" y="607.383" width="194.27" height="194.27" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur-3"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_28" x="133.371" y="413.91" width="122.735" height="122.735" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11.5" result="blur-4"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_29" x="27.741" y="149.628" width="148.585" height="148.585" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11.5" result="blur-5"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_30" x="90.868" y="0" width="168.566" height="168.566" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15.5" result="blur-6"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_31" x="51.13" y="509.397" width="122.016" height="122.016" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="9" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11.5" result="blur-7"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_58" data-name="Group 58" transform="translate(-1575.173 -4033.762)">
+    <g id="Group_54" data-name="Group 54" transform="translate(0 -16)">
+      <g class="cls-13" transform="matrix(1, 0, 0, 1, 1575.17, 4049.76)">
+        <g id="Rectangle_25-2" data-name="Rectangle 25" class="cls-1" transform="matrix(0.98, -0.21, 0.21, 0.98, 183.63, 296.19)">
+          <rect class="cls-5" width="44.699" height="44.699"/>
+          <rect class="cls-6" x="3" y="3" width="38.699" height="38.699"/>
+        </g>
+      </g>
+      <g class="cls-12" transform="matrix(1, 0, 0, 1, 1575.17, 4049.76)">
+        <g id="Rectangle_26-2" data-name="Rectangle 26" class="cls-1" transform="matrix(0.88, 0.47, -0.47, 0.88, 64.98, 358.56)">
+          <rect class="cls-5" width="59.599" height="59.599"/>
+          <rect class="cls-6" x="3" y="3" width="53.599" height="53.599"/>
+        </g>
+      </g>
+      <g class="cls-11" transform="matrix(1, 0, 0, 1, 1575.17, 4049.76)">
+        <g id="Rectangle_27-2" data-name="Rectangle 27" class="cls-2" transform="matrix(0.93, -0.36, 0.36, 0.93, 124.43, 677.31)">
+          <rect class="cls-5" width="80.707" height="80.707"/>
+          <rect class="cls-6" x="4" y="4" width="72.707" height="72.707"/>
+        </g>
+      </g>
+      <g class="cls-10" transform="matrix(1, 0, 0, 1, 1575.17, 4049.76)">
+        <g id="Rectangle_28-2" data-name="Rectangle 28" class="cls-2" transform="matrix(0.88, -0.47, 0.47, 0.88, 159.87, 461.06)">
+          <rect class="cls-5" width="39.733" height="39.733"/>
+          <rect class="cls-6" x="4" y="4" width="31.733" height="31.733"/>
+        </g>
+      </g>
+      <g class="cls-9" transform="matrix(1, 0, 0, 1, 1575.17, 4049.76)">
+        <g id="Rectangle_29-2" data-name="Rectangle 29" class="cls-3" transform="matrix(0.98, 0.17, -0.17, 0.98, 66.17, 177.13)">
+          <rect class="cls-5" width="68.699" height="68.699"/>
+          <rect class="cls-6" x="4.5" y="4.5" width="59.699" height="59.699"/>
+        </g>
+      </g>
+      <g class="cls-8" transform="matrix(1, 0, 0, 1, 1575.17, 4049.76)">
+        <g id="Rectangle_30-2" data-name="Rectangle 30" class="cls-4" transform="matrix(0.97, -0.26, 0.26, 0.97, 129.37, 52.47)">
+          <rect class="cls-5" width="61.699" height="61.699"/>
+          <rect class="cls-6" x="3.5" y="3.5" width="54.699" height="54.699"/>
+        </g>
+      </g>
+      <g class="cls-7" transform="matrix(1, 0, 0, 1, 1575.17, 4049.76)">
+        <g id="Rectangle_31-2" data-name="Rectangle 31" class="cls-1" transform="matrix(0.98, -0.21, 0.21, 0.98, 77.63, 544.19)">
+          <rect class="cls-5" width="44.699" height="44.699"/>
+          <rect class="cls-6" x="3" y="3" width="38.699" height="38.699"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

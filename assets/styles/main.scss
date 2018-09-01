@@ -11,6 +11,10 @@ $greenicon: #72D762;
   color: $primary;
 }
 
+.cta-fixed h2 {
+  font-size: 1.75rem!important;
+}
+
 .overlay-a::after,
 .overlay-b::before {
   position: absolute;
@@ -345,6 +349,7 @@ h6 {
 .home-welcome {
   min-height: 80vh;
   background-image: url("../images/screenshot.jpg");
+  background-attachment: fixed;
 }
 
 .ddos {
@@ -560,6 +565,9 @@ li.nope::before {
   }
 }
 // TRUST
+
+.king::before,
+.squares-white::after,
 .trust::after,
 .trust::before {
   position: absolute;
@@ -578,21 +586,41 @@ li.nope::before {
   left: -350px;
 }
 
+.king::before {
+  background-image: url("../images/king.png");
+  left: 0;
+  width: 600px;
+  background-position: bottom;
+  background-size: cover;
+}
+
 .trust::after {
   background-image: url("../images/right.svg");
   right: -350px;
 }
 
+.squares-white::after {
+  background-image: url("../images/squares-white.svg");
+  right: -300px;
+  background-size: contain;
+  background-position: left center;
+  top: -3vw;
+  bottom: -5vw;
+  z-index: 3;
+}
+
+#why.borders::after {
+  z-index: 0;
+}
 // CONVINCED
 
 .convinced {
-  background-image: url(../images/kontakt_bg.png);
+  background-image: url("../images/kontakt_bg.png");
   background-size: auto;
   background-position: center bottom;
   background-repeat: no-repeat;
   z-index: 2;
 }
-
 // NAVBAR
 
 .navbar-toggler-icon {
