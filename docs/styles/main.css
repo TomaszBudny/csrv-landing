@@ -1,5 +1,7 @@
 a, a:focus, a:hover { color: #00BF66; }
 
+.bg-block a, .bg-logo a, .bg-primary a, .bg-secondary a { color: white; }
+
 #diamond .square1 { width: 20px; height: 20px; right: -20px; top: 60px; z-index: 1; }
 
 #diamond .square2 { width: 50px; height: 50px; right: -10px; top: -10px; z-index: 1; }
@@ -76,17 +78,15 @@ body { overflow-x: hidden; font-family: 'Open Sans', sans-serif; }
 
 .text-secondary { color: #5CB089 !important; }
 
-.bg-block a, .bg-logo a, .bg-primary a, .bg-secondary a { color: white !important; }
-
 .btn { border-radius: 0; }
 
 .btn-primary { color: #fff; background-color: #00BF66; border-color: #00BF66; box-shadow: 0 5px 20px -6px rgba(7, 145, 11, 0.65); }
 
 .btn-primary:focus, .btn-primary:hover { color: #00BF66 !important; background-color: white; border-color: #00BF66; }
 
-.btn-outline-primary { color: #00BF66; background-color: white; border-color: #00BF66; }
+.btn-outline-primary { color: #00BF66 !important; background-color: white; border-color: #00BF66; }
 
-.btn-outline-primary:focus, .btn-outline-primary:hover { color: white; background-color: #00BF66; border-color: #00BF66; }
+.btn-outline-primary:focus, .btn-outline-primary:hover { color: white !important; background-color: #00BF66; border-color: #00BF66; }
 
 .btn-lg { border-width: 2px; }
 
@@ -165,3 +165,7 @@ li.nope::before { content: "\f00d"; color: red !important; }
 .box { position: absolute; }
 
 .box-1 { left: -100px; width: 80px; height: 80px; }
+
+.testimonials-section small { font-size: 50%; }
+
+.testimonials-section .fa { color: #72D762; }

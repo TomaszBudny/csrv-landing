@@ -5,11 +5,18 @@ $block: #5CB089;
 $button: #00BF66;
 $logo: #0C7235;
 $numbers: #2A6650;
+$greenicon: #72D762;
 
 a,
 a:focus,
 a:hover {
   color: $button;
+}
+.bg-block a,
+.bg-logo a,
+.bg-primary a,
+.bg-secondary a {
+  color: white;
 }
 
 #diamond {
@@ -241,12 +248,6 @@ h6 {
   color: $secondary!important;
 }
 
-.bg-block a,
-.bg-logo a,
-.bg-primary a,
-.bg-secondary a {
-  color: white!important;
-}
 
 .btn {
   border-radius: 0;
@@ -267,14 +268,14 @@ h6 {
 }
 
 .btn-outline-primary {
-  color: $button;
+  color: $button!important;
   background-color: white;
   border-color: $button;
 }
 
 .btn-outline-primary:focus,
 .btn-outline-primary:hover {
-  color: white;
+  color: white!important;
   background-color: $button;
   border-color: $button;
 }
@@ -473,7 +474,7 @@ $slope: 200px;
 }
 
 .icons.color li::before {
-  color: #72D762;
+  color: $greenicon;
 }
 
 li.nope::before {
@@ -489,4 +490,12 @@ li.nope::before {
   left: -100px;
   width: 80px;
   height: 80px;
+}
+.testimonials-section {
+  small {
+    font-size: 50%;
+  }
+  .fa {
+    color: $greenicon;
+  }
 }
