@@ -411,10 +411,9 @@ $slope: 200px;
   padding: 0.7rem 15px;
 }
 
-.fa-discord {
+.discord .fa-discord {
   font-size: 6rem;
 }
-
 .border-me li:last-of-type {
   //border-bottom: 1px solid #E9E9E9;
 }
@@ -451,11 +450,17 @@ $slope: 200px;
 }
 
 .footer .bg-secondary a::before {
+  color: $primary;
+}
+.footer .nav a::before {
   font-family: "Font Awesome 5 Free";
   content: "\f45c";
   margin-right: 0.5rem;
   font-weight: 900;
   color: $primary;
+}
+.footer .bg-primary a::before {
+  color: white;
 }
 
 .footer .bg-secondary a {

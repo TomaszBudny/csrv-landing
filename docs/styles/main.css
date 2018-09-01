@@ -136,7 +136,7 @@ footer small { font-size: 60%; }
 
 .border-me li { border-bottom: none; padding: 0.7rem 15px; }
 
-.fa-discord { font-size: 6rem; }
+.discord .fa-discord { font-size: 6rem; }
 
 .two li { border: 1px solid #E9E9E9; border-bottom: none; padding-top: 0.7rem; padding-bottom: 0.7rem; flex: 0 0 calc(50% - 30px); max-width: calc(50% - 30px); }
 
@@ -148,7 +148,11 @@ footer small { font-size: 60%; }
 
 .icons li::before { font-family: "Font Awesome 5 Free"; content: "\f14a"; margin-right: 0.5rem; font-size: 1.2rem; font-weight: 900; }
 
-.footer .bg-secondary a::before { font-family: "Font Awesome 5 Free"; content: "\f45c"; margin-right: 0.5rem; font-weight: 900; color: #31845D; }
+.footer .bg-secondary a::before { color: #31845D; }
+
+.footer .nav a::before { font-family: "Font Awesome 5 Free"; content: "\f45c"; margin-right: 0.5rem; font-weight: 900; color: #31845D; }
+
+.footer .bg-primary a::before { color: white; }
 
 .footer .bg-secondary a { padding-left: 1rem; font-size: 1.1rem; }
 
