@@ -198,6 +198,8 @@ li.nope::before { content: "\f00d"; color: red !important; }
 
 .testimonials-section .fa { color: #72D762; }
 
+.btn-outline-primary.focus, .btn-outline-primary:focus, .btn-primary.focus, .btn-primary:focus { box-shadow: none; }
+
 .king::before, .squares-white::after, .trust::after, .trust::before { position: absolute; top: 0; bottom: 0; width: 300px; content: " "; display: block; background-size: contain; background-position: center; background-repeat: no-repeat; }
 
 .trust::before { background-image: url("../images/left.svg"); left: -350px; }
