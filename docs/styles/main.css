@@ -34,7 +34,7 @@ b, strong { font-weight: 700; }
 
 .banner .bg-logo .nav-link:focus, .banner .bg-logo .nav-link:hover { border-bottom: 3px solid white; }
 
-.text-numbers { color: #2A6650; font-family: 'Lato', sans-serif; }
+.text-numbers { color: #0D9958; font-family: 'Lato', sans-serif; }
 
 .myb { margin-top: 9rem !important; margin-bottom: 9rem !important; }
 
@@ -190,6 +190,46 @@ li.nope::before { content: "\f00d"; color: red !important; }
 
 .box-1 { left: -100px; width: 80px; height: 80px; }
 
+.card-header { white-space: normal; }
+
 .testimonials-section small { font-size: 50%; }
 
 .testimonials-section .fa { color: #72D762; }
+
+.trust::after, .trust::before { position: absolute; top: 0; bottom: 0; width: 300px; content: " "; display: block; background-size: contain; background-position: center; background-repeat: no-repeat; }
+
+.trust::before { background-image: url("../images/left.svg"); left: -350px; }
+
+.trust::after { background-image: url("../images/right.svg"); right: -350px; }
+
+.convinced { background-image: url(../images/kontakt_bg.png); background-size: auto; background-position: center bottom; background-repeat: no-repeat; z-index: 2; }
+
+.navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='$primary' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+
+.navbar-light .navbar-toggler { color: #31845D; border-color: #31845D; }
+
+.navbar-toggler { position: relative; height: 40px; width: 56px; }
+
+.navbar-toggler span { border: none; height: 2px; width: 24px; position: absolute; top: 10px; left: 50%; transition: all 0.35s ease; cursor: pointer; -webkit-transform: translateX(-50%); transform: translateX(-50%); background: #31845D; }
+
+.navbar-toggler span:nth-of-type(2) { top: 18px; }
+
+.navbar-toggler span:nth-of-type(3) { top: 26px; }
+
+.navbar-toggler[aria-expanded="true"] .top { -webkit-transform: translateY(8px) translateX(-50%) rotate(45deg); transform: translateY(8px) translateX(-50%) rotate(45deg); }
+
+.navbar-toggler[aria-expanded="true"] .middle { opacity: 0; }
+
+.navbar-toggler[aria-expanded="true"] .bottom { -webkit-transform: translateY(-8px) translateX(-50%) rotate(-45deg); transform: translateY(-8px) translateX(-50%) rotate(-45deg); }
+
+@media (max-width: 991px) { .two { padding-right: 0 !important; padding-left: 0 !important; }
+  .navbar-light .navbar-nav .nav-link { padding: 0.7rem; }
+  .navbar-nav { padding: 1rem 0; }
+  .socials { display: none; }
+  .navbar-brand { padding: 1rem 0; } }
+
+.h3, h3 { font-size: 2.4rem; }
+
+@media (max-width: 767px) { .two li { flex: 0 0 100%; max-width: 100%; margin-right: 0 !important; margin-left: 0 !important; }
+  .two li:nth-last-of-type(2) { border-bottom: none; }
+  .testimonials-blockquote { margin: 0 !important !important; } }
