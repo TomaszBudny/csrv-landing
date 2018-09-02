@@ -7,6 +7,11 @@ $logo: #0C7235;
 $numbers: #2A6650;
 $greenicon: #72D762;
 
+.h1,
+h1 {
+  font-size: 3.5rem;
+}
+
 .bg-block h2 strong {
   color: $primary;
 }
@@ -47,8 +52,6 @@ strong {
 
 .gray {
   background-color: #F2F2F2;
-  margin-top: 5vw;
-  margin-bottom: 5vw;
 }
 
 .scrolling-off {
@@ -124,16 +127,6 @@ strong {
 .text-numbers {
   color: $headers;
   font-family: 'Lato', sans-serif;
-}
-
-.myb {
-  margin-top: 9rem!important;
-  margin-bottom: 9rem!important;
-}
-
-.pyb {
-  padding-top: 9rem!important;
-  padding-bottom: 9rem!important;
 }
 
 .block1 {
@@ -355,12 +348,10 @@ h6 {
 }
 
 .ddos {
-  min-height: 600px;
   background-image: url("../images/screenshot.jpg");
 }
 
 .vps {
-  min-height: 600px;
   background-image: url("../images/screenshot.jpg");
 }
 
@@ -423,6 +414,24 @@ $slope: 5vw;
 
 .pt-s {
   padding-top: $slope!important;
+}
+
+.mb-s {
+  margin-bottom: $slope!important;
+}
+
+.mt-s {
+  margin-top: $slope!important;
+}
+
+.my-s {
+  margin-top: $slope!important;
+  margin-bottom: $slope!important;
+}
+
+.py-s {
+  padding-top: $slope!important;
+  padding-bottom: $slope!important;
 }
 
 .form-control,
@@ -574,17 +583,20 @@ li.nope::before {
   box-shadow: none;
 }
 // KING
+
 .king {
   a,
   header {
     position: relative;
     z-index: 3;
   }
+
   header strong {
-    text-shadow: 0 5px 20px  rgba(13, 153, 88, 0.65);
+    text-shadow: 0 5px 20px rgba(13, 153, 88, 0.65);
   }
-  header  {
-    text-shadow: 0 5px 20px  rgba(255, 255, 255, 0.65);
+
+  header {
+    text-shadow: 0 5px 20px rgba(255, 255, 255, 0.65);
   }
 }
 // TRUST
@@ -613,8 +625,8 @@ li.nope::before {
   background-image: url("../images/king.png");
   left: 0;
   width: 600px;
-  background-position: bottom;
-  background-size: cover;
+  background-position: left bottom;
+  background-size: contain;
 }
 
 .trust::after {
@@ -740,5 +752,11 @@ h3 {
 
   .testimonials-blockquote {
     margin: 0!important !important;
+  }
+}
+@media (min-width: 1920px) {
+  .row-limit {
+    max-width: 1920px!important;
+    margin: 0 auto;
   }
 }
