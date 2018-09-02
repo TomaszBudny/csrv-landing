@@ -1,3 +1,5 @@
+.banner .bg-logo .nav-link { display: block; padding: 0.5rem 0.7rem; }
+
 .h1, h1 { font-size: 3.5rem; }
 
 .bg-block h2 strong { color: #31845D; }
@@ -32,7 +34,7 @@ b, strong { font-weight: 700; }
 
 #diamond .square6 { width: 40px; height: 40px; left: 60px; bottom: -20px; }
 
-.diamond { background: #E5F8EF; }
+.bg-diamond { background: #E5F8EF; }
 
 .banner .bg-logo .nav-link { border-bottom: 3px solid transparent; transition: all 0.4s; }
 
@@ -174,7 +176,7 @@ footer small { font-size: 60%; }
 
 .two li:nth-of-type(2n+1) { margin-right: 15px; }
 
-.two li:nth-last-of-type(1), .two li:nth-last-of-type(2) { border-bottom: 1px solid lightgray; }
+.two li:nth-last-of-type(1), .two li:nth-last-of-type(2) { border-bottom: 1px solid #E9E9E9; }
 
 .icons li::before { font-family: "Font Awesome 5 Free"; content: "\f14a"; margin-right: 0.5rem; font-size: 1.2rem; font-weight: 900; }
 
@@ -243,6 +245,10 @@ li.nope::before { content: "\f00d"; color: red !important; }
 .navbar-toggler[aria-expanded="true"] .middle { opacity: 0; }
 
 .navbar-toggler[aria-expanded="true"] .bottom { -webkit-transform: translateY(-8px) translateX(-50%) rotate(-45deg); transform: translateY(-8px) translateX(-50%) rotate(-45deg); }
+
+.icon { margin: 0; }
+
+.icon img { width: 60px; height: auto; margin-right: 10px; margin-bottom: 0.5rem; }
 
 @media (max-width: 991px) { .two { padding-right: 0 !important; padding-left: 0 !important; }
   .navbar-light .navbar-nav .nav-link { padding: 0.7rem; }

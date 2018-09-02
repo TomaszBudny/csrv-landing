@@ -7,6 +7,11 @@ $logo: #0C7235;
 $numbers: #2A6650;
 $greenicon: #72D762;
 
+.banner .bg-logo .nav-link {
+  display: block;
+  padding: 0.5rem 0.7rem;
+}
+
 .h1,
 h1 {
   font-size: 3.5rem;
@@ -110,7 +115,7 @@ strong {
   }
 }
 
-.diamond {
+.bg-diamond {
   background: #E5F8EF;
 }
 
@@ -503,7 +508,7 @@ $slope: 5vw;
 
 .two li:nth-last-of-type(1),
 .two li:nth-last-of-type(2) {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #E9E9E9;
 }
 
 .icons li::before {
@@ -710,6 +715,18 @@ li.nope::before {
   -webkit-transform: translateY(-8px) translateX(-50%) rotate(-45deg);
   -o-transform: translateY(-8px) translateX(-50%) rotate(-45deg);
   transform: translateY(-8px) translateX(-50%) rotate(-45deg);
+}
+// OFFER
+
+.icon {
+  margin: 0;
+}
+
+.icon img {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 0.5rem;
 }
 @media (max-width: 991px) {
   .two {
