@@ -136,7 +136,7 @@ body { overflow-x: hidden; font-family: 'Open Sans', sans-serif; }
 
 .shadow { box-shadow: 3px 3px 20px 0 rgba(0, 0, 0, 0.09); }
 
-img.shadow { padding: 10px; }
+img.shadow { border: 10px solid white; }
 
 section header { text-align: center; }
 
