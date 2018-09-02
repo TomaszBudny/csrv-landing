@@ -350,6 +350,8 @@ h6 {
   min-height: 80vh;
   background-image: url("../images/screenshot.jpg");
   background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
 }
 
 .ddos {
@@ -570,6 +572,20 @@ li.nope::before {
 .btn-primary.focus,
 .btn-primary:focus {
   box-shadow: none;
+}
+// KING
+.king {
+  a,
+  header {
+    position: relative;
+    z-index: 3;
+  }
+  header strong {
+    text-shadow: 0 5px 20px  rgba(13, 153, 88, 0.65);
+  }
+  header  {
+    text-shadow: 0 5px 20px  rgba(255, 255, 255, 0.65);
+  }
 }
 // TRUST
 
