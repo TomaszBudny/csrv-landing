@@ -28,7 +28,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#navigation" itemscope="itemscope" itemtype="https://schema.org/Organization">
+<body class="position-relative" itemscope="itemscope" itemtype="https://schema.org/Organization">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -43,11 +43,11 @@
           <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-discord"></i></a></li>
         </ul>
         <ul class="nav">
-          <li class="nav-item"><a href="" class="nav-link">Nasza paczka pluginów</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Poradniki</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Dla rodziców</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Spytaj Eksperta</a></li>
-          <li class="nav-item"><a href="" class="nav-link"><i class="far fa-user"></i> Logowanie</a></li>
+          <li class="nav-item"><a href="/paczka-pluginow" class="nav-link">Nasza paczka pluginów</a></li>
+          <li class="nav-item"><a href="/poradniki" class="nav-link">Poradniki</a></li>
+          <li class="nav-item"><a href="/dla-rodzicow" class="nav-link">Dla rodziców</a></li>
+          <li class="nav-item"><a href="/strefa-eksperta" class="nav-link">Spytaj Eksperta</a></li>
+          <li class="nav-item"><a href="/login" class="nav-link"><i class="far fa-user"></i> Logowanie</a></li>
         </ul>
       </div>
     </div>
@@ -65,25 +65,25 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto" id="navigation">
               <li class="nav-item">
-                <a class="nav-link" href="#why">Oferta</a>
+                <a class="nav-link" href="#oferta">Oferta</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#offer">O nas</a>
+                <a class="nav-link" href="#o-nas">O nas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Technologia</a>
+                <a class="nav-link" href="#technologia">Technologia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Usługi</a>
+                <a class="nav-link" href="#uslugi">Usługi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="#faq">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Opinie</a>
+                <a class="nav-link" href="#opinie">Opinie</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Kontakt</a>
+                <a class="nav-link" href="/contact">Kontakt</a>
               </li>
             </ul>
           </div>
@@ -104,7 +104,7 @@
       <a href="" class="btn btn-primary btn-lg">Stwórz darmowy serwer</a>
     </div>
   </section>
-  <section>
+  <section id="oferta">
     <div class="container free shadow clearfix p-5">
       <header class="mb-5">
         <h2 class="icon position-relative"><img src="images/ico_dirt.png" />Serwer <strong>FREE</strong></h2>
@@ -117,11 +117,11 @@
         <li class="col-md-6">123 silników do wyboru</li>
         <li class="col-md-6">Do 3 graczy online</li>
         <li class="col-md-6">Dostępny w godzinach niskiego ruchu</li>
+        <li class="col-md-6 nope">Codzienne kopie zapasowe</li>
         <li class="col-md-6">Wszystkie funkcje pakietu Diamond</li>
-        <li class="col-md-6">Codzienne kopie zapasowe</li>
         <li class="col-md-6 nope">Serwer usuwany po 3 dniach nieaktywności</li>
       </ul>
-      <p class="text-center m-0"><small><a href=""><i class="far fa-question-circle"></i> Więcej informacji</a></small></p>
+      <p class="text-center m-0"><small><button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-dirt"><i class="far fa-question-circle"></i> Więcej informacji</button></small></p>
       <footer class="position-absolute d-flex justify-content-end align-items-center">
         <span class="font-weight-bold h2 mb-0 mr-3">0<small>zł/mc</small></span>
         <a href="" class="btn btn-primary btn-lg">Aktywuj teraz</a>
@@ -140,14 +140,15 @@
             <h2 class="h3 icon position-relative"><img src="images/ico_grass.png" />Serwer <strong>FRIENDS</strong></h2>
             <p>Tani serwer do gry z przyjaciółmi, bez modów</p>
             <ul class="no-styling pros icons color border-me mb-3">
+              <li>Natychmiastowa aktywacja</li>
               <li>Dostępny 24/7</li>
               <li>150% CPU, 4 GB RAM</li>
               <li>2 GB dysku SSD</li>
               <li>Do 10 graczy online</li>
-              <li class="nope">Bez obsługi modów</li>
               <li class="nope">Limit 10 pluginów</li>
+              <li class="nope">Obsługa modyfikacji</li>
             </ul>
-            <p class="text-right"><small><a href=""><i class="far fa-question-circle"></i> Więcej informacji</a></small></p>
+            <p class="text-center m-0"><small><button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-grass"><i class="far fa-question-circle"></i> Więcej informacji</button></small></p>
             <footer class="position-absolute d-flex justify-content-end align-items-center">
               <span class="font-weight-bold h2 mb-0 mr-3">9,99<small>zł/mc</small></span>
               <a href="" class="btn btn-primary btn-lg">Aktywuj teraz</a>
@@ -162,6 +163,7 @@
             <h2 class="h3 icon position-relative"><img src="images/ico_diamond.png" /> Serwer <strong>DIAMOND</strong></h2>
             <p>Ten serwer poradzi sobie z każdym zadaniem</p>
             <ul class="no-styling pros icons color border-me mb-3">
+              <li>Natychmiastowa aktywacja</li>
               <li>Dostępny 24/7</li>
               <li>200% CPU, do 32 GB RAM</li>
               <li>10 GB dysku SSD</li>
@@ -170,7 +172,7 @@
               <li>Obsługa modyfikacji</li>
               <li>Priorytetowe wsparcie</li>
             </ul>
-            <p class="text-right"><small><a href=""><i class="far fa-question-circle"></i> Więcej informacji</a></small></p>
+            <p class="text-center m-0"><small><button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-diamond"><i class="far fa-question-circle"></i> Więcej informacji</button></small></p>
             <footer class="position-absolute d-flex justify-content-end align-items-center">
               <span class="font-weight-bold h2 mb-0 mr-3">29,99<small>zł/mc</small></span>
               <a href="" class="btn btn-primary btn-lg">Aktywuj teraz</a>
@@ -181,16 +183,15 @@
           <span class="position-absolute d-block bg-primary square square6"></span>
         </article>
       </div>
+      <div class="mt-s text-center">
+        <p class="mb-0">Wciąż nie wiesz co wybrać? <a href="" class="text-underline">Porównaj nasze pakiety!</a></p>
+      </div>
     </div>
   </section>
 
 
-  <div class="cta-fixed bg-white w-100 shadow p-3 d-flex justify-content-center align-items-center">
-    <h2 class="m-0 h3 text-primary">Szukasz <strong>dobrego</strong> serwera 24/7?</h2>
-    <a href="" class="btn btn-primary ml-5 font-weight-bold">Porównaj nasze oferty!</a>
-  </div>
 
-  <section id="why" class="bg-block position-relative borders block1 clearfix">
+  <section id="o-nas" class="bg-block position-relative borders block1 clearfix">
     <div class="container py-s position-relative squares-white">
       <header>
         <h2>Jakie <strong>zalety</strong> ma Craftserve?</h2>
@@ -224,6 +225,10 @@
       </ul>
     </div>
   </section>
+  <div class="cta-fixed bg-white w-100 shadow p-3 d-flex justify-content-center align-items-center">
+    <h2 class="m-0 h3 text-primary">Szukasz <strong>dobrego</strong> serwera 24/7?</h2>
+    <a href="" class="btn btn-primary ml-5 font-weight-bold">Porównaj nasze pakiety!</a>
+  </div>
 
   <div class="container my-s text-center">
     <div class="trust position-relative py-5">
@@ -236,30 +241,30 @@
     <div class="mb-5">
       <h3 class="mb-4">Zaufali nam najwięksi polscy <strong>YouTuberzy</strong></h3>
       <div class="row">
-        <div class="col-lg-2 col-sm-4 col-xs-6 p-2 text-center">
-          <img src="https://yt3.ggpht.com/-mdu41d229mI/AAAAAAAAAAI/AAAAAAAAAAA/itdPJrrk1T8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" width="90px" height="90px" alt="">
+        <a href="https://www.youtube.com/channel/UCfCgV1n6zliJp-UfGvq-k2g" target="_blank" rel="nofollow noopener" class="col-lg-2 col-sm-4 col-xs-6 p-2 text-center">
+          <img src="images/Steve.png" width="90px" height="90px" alt="" class="shadow mb-2">
           <span class="d-block">BuraczekCebulaczek</span>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-xs-6 p-2 text-center">
-          <img src="https://yt3.ggpht.com/-mdu41d229mI/AAAAAAAAAAI/AAAAAAAAAAA/itdPJrrk1T8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" width="90px" height="90px" alt="">
-          <span class="d-block">SKKF</span>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-xs-6 p-2 text-center">
-          <img src="https://yt3.ggpht.com/-mdu41d229mI/AAAAAAAAAAI/AAAAAAAAAAA/itdPJrrk1T8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" width="90px" height="90px" alt="">
+        </a>
+        <a href="https://www.youtube.com/user/skkf" target="_blank" rel="nofollow noopener" class="col-lg-2 col-sm-4 col-xs-6 p-2 text-center">
+          <img src="images/Steve.png" width="90px" height="90px" alt="" class="shadow mb-2">
+          <span class="d-block">skkf</span>
+        </a>
+        <a href="https://www.youtube.com/user/IROLLGRA" target="_blank" rel="nofollow noopener" class="col-lg-2 col-sm-4 col-xs-6 p-2 text-center">
+          <img src="images/Steve.png" width="90px" height="90px" alt="" class="shadow mb-2">
           <span class="d-block">iRoll</span>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-xs-6 p-2 text-center">
-          <img src="https://yt3.ggpht.com/-mdu41d229mI/AAAAAAAAAAI/AAAAAAAAAAA/itdPJrrk1T8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" width="90px" height="90px" alt="">
+        </a>
+        <a href="https://www.youtube.com/channel/UCFqC5TtRkeTg0EsCrD2-Biw" target="_blank" rel="nofollow noopener" class="col-lg-2 col-sm-4 col-xs-6 p-2 text-center">
+          <img src="images/Steve.png" width="90px" height="90px" alt="" class="shadow mb-2">
           <span class="d-block">Avalkiz</span>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-xs-6 p-2 text-center">
-          <img src="https://yt3.ggpht.com/-mdu41d229mI/AAAAAAAAAAI/AAAAAAAAAAA/itdPJrrk1T8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" width="90px" height="90px" alt="">
-          <span class="d-block">SKKF</span>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-xs-6 p-2 text-center">
-          <img src="https://yt3.ggpht.com/-mdu41d229mI/AAAAAAAAAAI/AAAAAAAAAAA/itdPJrrk1T8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" width="90px" height="90px" alt="">
-          <span class="d-block">SKKF</span>
-        </div>
+        </a>
+        <a href="" target="_blank" rel="nofollow noopener" class="col-lg-2 col-sm-4 col-xs-6 p-2 text-center">
+          <img src="images/Steve.png" width="90px" height="90px" alt="" class="shadow mb-2">
+          <span class="d-block">chlitto</span>
+        </a>
+        <a href="" target="_blank" rel="nofollow noopener" class="col-lg-2 col-sm-4 col-xs-6 p-2 text-center">
+          <img src="images/Steve.png" width="90px" height="90px" alt="" class="shadow mb-2">
+          <span class="d-block">chlitto</span>
+        </a>
       </div>
     </div>
     <div class="my-5">
@@ -291,7 +296,7 @@
     </div>
   </div>
 
-  <h2 class="display-3 my-5 text-center">Nasza <strong>Technologia</strong></h2>
+  <h2 id="technologia" class="display-3 my-5 text-center">Nasza <strong>Technologia</strong></h2>
 
   <section class="bg-primary bg-image vps position-relative slope-white-bottom pb-s d-flex align-items-center overlay-b text-center">
     <div class="container py-s">
@@ -376,7 +381,7 @@
 
 
 
-  <section class="py-5">
+  <section id="uslugi" class="py-5">
     <header>
       <h2 class="display-3 mb-5 text-center">Dodatkowe <strong>usługi</strong></h2>
     </header>
@@ -405,7 +410,7 @@
     </article>
   </section>
 
-  <section class="gray gray-b position-relative pb-s mt-s">
+  <section id="faq" class="gray gray-b position-relative pb-s mt-s">
     <header class="mb-5">
       <h2 class="display-3 text-center">Często zadawane pytania</h2>
       <p>Jeśli masz jakieś pytania lub wątpliwości zobacz nasze FAQ lub <a href="">napisz do nas!</a></p>
@@ -460,15 +465,15 @@
       <h2>W trosce o naszych klientów tworzymy również</h2>
     </header>
     <ul class="nav square square justify-content-center">
-      <li class="nav-item"><a href="" class="nav-link">Paczkę pluginów</a></li>
-      <li class="nav-item"><a href="" class="nav-link">Poradniki</a></li>
-      <li class="nav-item"><a href="" class="nav-link">Informacje dla rodziców</a></li>
-      <li class="nav-item"><a href="" class="nav-link">Eksperie pytania i odpowiedzi</a></li>
+      <li class="nav-item"><a href="/paczka-pluginow" class="nav-link">Paczkę pluginów</a></li>
+      <li class="nav-item"><a href="/poradniki" class="nav-link">Poradniki</a></li>
+      <li class="nav-item"><a href="/dla-rodzicow" class="nav-link">Informacje dla rodziców</a></li>
+      <li class="nav-item"><a href="/strefa-eksperta" class="nav-link">Eksperie pytania i odpowiedzi</a></li>
     </ul>
   </div>
 
 
-  <section class="testimonials-section text-center my-s" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+  <section id="opinie" class="testimonials-section text-center my-s" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
     <div class="container position-relative">
       <header>
         <h2>Opinie naszych <strong>klientów</strong></h2>
@@ -614,13 +619,93 @@
             <li class="nav-item"><a href="" class="nav-link">Regulamin</a></li>
             <li class="nav-item"><a href="" class="nav-link">English Version</a></li>
             <li class="nav-item"><span class="nav-link"><span itemprop="name">Craftserve</span> © 2018</span>
+            </li>
           </ul>
-
         </div>
       </div>
     </div>
   </footer>
 
+  <div class="modal fade" id="modal-dirt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Informacje o ofercie Dirt</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ol>
+            <li>Każdy serwer Dirt posiada limit 512 MB pamięci RAM.</li>
+            <li>Maksymalna liczba slotów (graczy równocześnie będących online na serwerze) dla serwera Dirt to 5 slotów.</li>
+            <li>Pliki serwera Dirt są przechowywane przez okres 10 dni od daty jego wygaśnięcia. Po tym czasie zostają one usunięte wraz z przydzielonym adresem IP oraz portem serwera.</li>
+            <li>Na serwerze Dirt dostępne są silniki Standard, czyli oficjalnie wydane przez twórców Minecrafta. Silniki te występują w różnych wersjach, stabilnych i testowych oraz nie obsługują one pluginów i modów. Dokładny spis dostępnych silników Standard
+              znajduje się na stronie https://craftserve.pl/engines (kategorie Standard i Standard Snapshot).</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-grass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Informacje o ofercie Grass</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+        </div>
+        <div class="modal-body">
+          <ol>
+            <li>Każdy serwer Grass posiada limit 1024 MB pamięci RAM.</li>
+            <li>Maksymalna liczba slotów (graczy równocześnie będących online na serwerze) dla serwera Grass to 10 slotów.</li>
+            <li>Pliki serwera Grass są przechowywane przez okres 10 dni od daty jego wygaśnięcia. Po tym czasie zostają one usunięte wraz z przydzielonym adresem IP oraz portem serwera.</li>
+            <li>serwerze Grass dostępne są silniki Standard oraz CraftBukkit. Silniki standard są oficjalnie wydane przez twórców Minecrafta, a silniki CraftBukkit to silniki tworzone przez społeczność intuzjastów (obsługują one pluginy). Liczba możliwych
+              równocześnie zainstalowanych pluginów dla serwera Grass to 5 pluginów. Silniki występują w różnych wersjach, stabilnych i testowych. Dokładny spis dostępnych silników Standard oraz CraftBukkit znajduje się na stronie https://craftserve.pl/engines
+              (kategorie Standard, Standard Snapshot, CraftBukkit oraz CraftBukkit (wersje deweloperskie)).</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-diamond" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Informacje o ofercie Diamond</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+        </div>
+        <div class="modal-body">
+          <ol>
+            <li>Nielimitowana pamięć RAM<br /> Każdy użytkownik dostaje tyle pamięci dla serwera ile może potrzebować. Specyfika Javy wymaga, aby podczas jej uruchomienia zawsze był określony limit dostępnej dla niej pamięci. Standardowo ustawiamy ten limit
+              na 8192MB. Taka ilość pamięci wystarczy w przypadku większości dużych serwerów. Może zdarzyć się, że ktoś będzie potrzebował więcej pamięci np. z powodu dużej liczby równoległych światów na serwerze wraz z wieloma graczami. W takim przypadku,
+              gdy serwer nie będzie poprawnie działał z powodu błędu "Out of Memory" to limit ten możemy stopniowo podnosić aż do 24 GB RAM. Liczba 24 GB (24576 MB) RAM to już nieosiągalny limit dla jednego poprawnie działającego serwera Minecraft.</li>
+            <li>Nielimitowana liczba slotów<br /> Nie limitujemy liczby slotów, czyli liczby graczy, którzy jednocześnie mogą być zalogowani i grać na Twoim serwerze. Minecraft wymaga by był podany limit slotów przy starcie serwera, domyślnie ustawiamy tę wartość
+              na 100. W ustawieniach serwera możesz ustawić swoją własną, dowolną liczbę slotów.</li>
+            <li>Dynamiczny CPU<br /> Na start, każdy serwer dostaje minimum dwa całe rdzenie procesora Intel(R) Xeon(R). Limit jest dynamicznie zwiększany w zależności od liczby graczy online na serwerze.</li>
+            <li>Powierzchnia dyskowa i MySQL<br /> Każdy serwer posiada limit 10 GB powierzchni dysku SSD. Maksymalny rozmiar bazy danych MySQL to 1GB. Wartości te mogą zostać zwiększone za darmo w uzasadnionych przypadkach.</li>
+            <li>Przechowywanie danych<br /> Pliki serwera Diamond są przechowywane przez okres 45 dni od daty jego wygaśnięcia. Po tym czasie zostają one usunięte wraz z przydzielonym adresem IP oraz portem serwera.</li>
+            <li>Dostępne silniki i modyfikacje<br /> Lista silników oraz gotowych paczek modyfikacji, które możesz ustawić na swoim serwerze, dostępna jest pod adresem https://craftserve.pl/engines Jeśli brakuje jakiegoś silnika lub paczki modyfikacji, którą
+              chciałbyś użyć, skontaktuj się z nami (https://craftserve.pl/contact). Postaramy się dodać silnik, który potrzebujesz.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="scripts/jquery.js?ver=1.12.4"></script>
   <script src="scripts/jquery-migrate.min.js?ver=1.4.1"></script>

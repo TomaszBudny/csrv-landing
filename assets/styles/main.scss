@@ -7,6 +7,10 @@ $logo: #0C7235;
 $numbers: #2A6650;
 $greenicon: #72D762;
 
+.container p {
+  font-size: 1.1rem;
+}
+
 .banner .bg-logo .nav-link {
   display: block;
   padding: 0.5rem 0.7rem;
@@ -19,6 +23,15 @@ h1 {
 
 .bg-block h2 strong {
   color: $primary;
+}
+
+.cta-fixed {
+  z-index: 5;
+  position: relative;
+}
+
+.fixed-bottom {
+  position: fixed!important;
 }
 
 .cta-fixed h2 {
@@ -37,6 +50,9 @@ h1 {
   display: block;
 }
 
+.btn-link,
+.btn-link:focus,
+.btn-link:hover,
 a,
 a:focus,
 a:hover {
@@ -64,7 +80,7 @@ strong {
 }
 
 .square {
-  z-index: 2;
+  z-index: 4;
 }
 
 .square.bg-primary {
@@ -193,10 +209,6 @@ h2 {
   font-size: 3rem;
 }
 
-.container p {
-  font-size: 1.1rem;
-}
-
 .discord {
   padding: 4rem 0;
 }
@@ -270,7 +282,7 @@ h6 {
 }
 
 .position-relative .position-relative {
-  z-index: 1;
+  z-index: 2;
 }
 
 .slope-white-bottom::after {
@@ -349,7 +361,10 @@ h6 {
 }
 
 .btn-primary:focus,
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
   color: $button!important;
   background-color: white;
   border-color: $button;
@@ -408,7 +423,7 @@ h6 {
   box-shadow: 3px 3px 20px 0 rgba(0,0,0,0.09);
 }
 
-img.shadow {
+.img-fluid.shadow {
   border: 10px solid white;
 }
 
@@ -628,14 +643,23 @@ li.nope::before {
     color: $greenicon;
   }
 }
-
+.modal-body li {
+  margin-bottom: 1rem;
+}
 .btn-outline-primary.focus,
 .btn-outline-primary:focus,
 .btn-primary.focus,
 .btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn.focus,
-.btn:focus {
+.btn:focus,
+.form-control:focus,
+.show > .btn-primary.dropdown-toggle:focus {
   box-shadow: none;
+}
+.form-control:focus {
+  border-color: $button;
 }
 // KING
 

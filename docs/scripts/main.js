@@ -1,5 +1,15 @@
 (function($) {
 
+  var spyoffset = function() {
+    var varspyoffset = $(window).height() / 3;
+    $("body").attr({
+      "data-spy": "scroll",
+      "data-target": "#navigation"
+    }).scrollspy({
+      offset: varspyoffset
+    });
+  };
+
   var navTop = {
     position: null
   };
@@ -55,8 +65,8 @@
   $(document).ready(function() {
 
     fixedNav($('.header-navigation'), 'top', navTop, $('header.banner'));
-		fixedNav($('.cta-fixed'), 'bottom', navBottom, $('body'));
-
+    fixedNav($('.cta-fixed'), 'bottom', navBottom, $('body'));
+    spyoffset();
     $(window).load(function() {
       resetFixedNav($('.header-navigation'), 'top', navTop, $('header.banner'));
       resetFixedNav($('.cta-fixed'), 'bottom', navBottom, $('body'));
@@ -85,19 +95,17 @@
       resetFixedNav($('.cta-fixed'), 'bottom', navBottom, $('body'));
     }, 300);
   });
-  jQuery('a[href*=#]:not([href=#])').click(function() {
-    if (jQuery(this).hasClass('carousel-control')) {
-      return;
-    }
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = jQuery(this.hash);
-      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        jQuery('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
+
+
+  $("#navigation a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function() {
+        window.location.hash = hash;
+      });
     }
   });
 })(jQuery);
