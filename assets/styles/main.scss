@@ -881,7 +881,7 @@ h3 {
   text-align: center;
 }
 
-.table-responsive .row:nth-last-of-type(1) {
+.table-responsive .row:nth-last-of-type(1) > div {
   border-bottom: 1px solid lightgray;
 }
 
@@ -901,12 +901,21 @@ h3 {
     margin: 0 auto;
   }
 }
+@media (max-width: 1200px) {
+  .table-responsive .h2 {
+    font-size: 2.5rem;
+  }
+}
 @media (min-width: 991px) and (max-width: 1199px) {
   #diamond .square6 {
     display: none!important;
   }
 }
 @media (max-width: 991px) {
+  .table-responsive .h2 {
+    font-size: 1.8rem;
+  }
+
   .two {
     padding-right: 0!important;
     padding-left: 0!important;
@@ -931,11 +940,11 @@ h3 {
   .text-numbers {
     font-size: 3rem;
   }
+
   .table-responsive img {
     display: block;
     margin: 0 auto;
   }
-
 }
 @media (min-width: 768px) and (max-width: 991px) {
   footer.position-absolute {
@@ -954,7 +963,6 @@ h3 {
     padding-left: 15px!important;
     max-width: 100%!important;
   }
-
 
   .top-menu {
     width: 100% !important;

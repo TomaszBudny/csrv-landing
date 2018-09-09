@@ -298,7 +298,7 @@ li.nope::before { content: "\f00d"; color: red !important; }
 
 .table-responsive .row > div { border-top: 1px solid lightgray; border-right: 1px solid lightgray; padding: 15px; text-align: center; }
 
-.table-responsive .row:nth-last-of-type(1) { border-bottom: 1px solid lightgray; }
+.table-responsive .row:nth-last-of-type(1) > div { border-bottom: 1px solid lightgray; }
 
 .table-responsive .row > div:nth-of-type(1) { background-color: #F2F2F2; color: #00BF66; text-align: left; border-left: 1px solid lightgray; }
 
@@ -306,9 +306,12 @@ li.nope::before { content: "\f00d"; color: red !important; }
 
 @media (min-width: 1920px) { .row-limit { max-width: 1920px !important; margin: 0 auto; } }
 
+@media (max-width: 1200px) { .table-responsive .h2 { font-size: 2.5rem; } }
+
 @media (min-width: 991px) and (max-width: 1199px) { #diamond .square6 { display: none !important; } }
 
-@media (max-width: 991px) { .two { padding-right: 0 !important; padding-left: 0 !important; }
+@media (max-width: 991px) { .table-responsive .h2 { font-size: 1.8rem; }
+  .two { padding-right: 0 !important; padding-left: 0 !important; }
   .navbar-light .navbar-nav .nav-link { padding: 0.7rem; }
   .navbar-nav { padding: 1rem 0; }
   .socials { display: none; }
