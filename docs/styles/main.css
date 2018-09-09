@@ -54,7 +54,7 @@ b, strong { font-weight: 700; }
 
 .testimonials-section .square6 { width: 40px; height: 40px; left: -40px; bottom: -70px; }
 
-.bg-diamond, .table td:last-of-type, .table thead th:last-of-type { background: #E5F8EF; }
+.bg-diamond { background: #E5F8EF; }
 
 .banner .bg-logo .nav-link { border-bottom: 3px solid transparent; transition: all 0.4s; }
 
@@ -284,31 +284,23 @@ li.nope::before { content: "\f00d"; color: red !important; }
 
 .h3, h3 { font-size: 2.4rem; }
 
-.table img { width: 48px; height: 48px; margin-right: 8px; }
+.table-responsive img { width: 48px; height: 48px; margin-right: 8px; }
 
-.table .fa-check-square { color: #72D762; }
+.table-header { font-weight: bold; font-size: 1.5rem; text-transform: uppercase; line-height: 2; }
 
-.table .fa-times { color: red !important; }
+.table-responsive .fa-check-square, .table-responsive .fa-times { font-size: 1.4rem; }
 
-.table .fa-check-square, .table .fa-times { font-size: 1.4rem; }
+.table-responsive .fa-check-square { color: #72D762; }
 
-.table td, .table th { border-top: none; }
+.table-responsive .fa-times { color: red !important; }
 
-.table td, .table thead th { text-align: center; }
+.table-responsive .row > div { border-top: 1px solid lightgray; border-right: 1px solid lightgray; padding: 15px; text-align: center; }
 
-.table td, .table th { padding: 1rem 0.75rem; }
+.table-responsive .row:nth-last-of-type(1) { border-bottom: 1px solid lightgray; }
 
-.table thead th { font-weight: bold; font-size: 1.5rem; text-transform: uppercase; line-height: 2; width: 25%; }
+.table-responsive .row > div:nth-of-type(1) { background-color: #F2F2F2; color: #00BF66; text-align: left; border-left: 1px solid lightgray; }
 
-.table tbody { border-top: 2px solid #dee2e6; }
-
-.table thead { border-top: 1px solid #dee2e6; }
-
-.table thead th:nth-of-type(1) { font-weight: normal; }
-
-.table tbody th, .table thead th:first-of-type { background-color: #F2F2F2; color: #00BF66; font-weight: normal; }
-
-.table tbody td { vertical-align: middle !important; }
+.table-responsive .row > div:nth-of-type(4) { background: #E5F8EF; }
 
 @media (min-width: 1920px) { .row-limit { max-width: 1920px !important; margin: 0 auto; } }
 

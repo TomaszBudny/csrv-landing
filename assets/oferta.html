@@ -105,15 +105,14 @@
       <header class="mb-5">
         <h2 class="icon position-relative">Nasze pakiety</h2>
       </header>
-      <div class="table-responsive js-scrollable">
+      <div class="table-responsive js-scrollable-shadow scroll-hint is-scrollable is-right-scrollable">
         <table class="table table-bordered">
           <thead>
             <tr>
               <th scope="col" class="col-3 text-left align-middle text-body">Opcje</th>
               <th scope="col" class="col-3 text-headings"><img src="images/ico_dirt.png" /> Free</th>
               <th scope="col" class="col-3 text-headings"><img src="images/ico_grass.png" /> Grass</th>
-              <th scope="col" class="col-3 text-headings"><img src="images/ico_diamond.png"
-                /> Diamond</th>
+              <th scope="col" class="col-3 text-headings"><img src="images/ico_diamond.png" /> Diamond</th>
             </tr>
           </thead>
           <tbody>
@@ -303,7 +302,7 @@
     </div>
   </div>
 
-<!--
+  <!--
   <section id="o-nas">
 
     <div class="bg-block position-relative borders block1 mt-0">
@@ -659,6 +658,9 @@
     (function($) {
       $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip();
+        new ScrollHint('.js-scrollable', {
+          suggestiveShadow: true
+        });
       });
     })(jQuery);
   </script>
