@@ -63,7 +63,7 @@
 
 
   $(document).ready(function() {
-
+    $('[data-toggle="tooltip"]').tooltip();
     fixedNav($('.header-navigation'), 'top', navTop, $('header.banner'));
     fixedNav($('.cta-fixed'), 'bottom', navBottom, $('body'));
     spyoffset();
