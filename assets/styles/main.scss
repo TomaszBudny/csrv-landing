@@ -181,7 +181,9 @@ strong {
   }
 }
 
-.bg-diamond {
+.bg-diamond,
+.table td:last-of-type,
+.table thead th:last-of-type {
   background: #E5F8EF;
 }
 
@@ -504,6 +506,7 @@ $slope: 5vw;
 .mb-s {
   margin-bottom: $slope!important;
 }
+
 .mb-xl-s {
   margin-bottom: $slope*2!important;
 }
@@ -882,17 +885,65 @@ h3 {
   font-size: 1.5rem;
   text-transform: uppercase;
   line-height: 2;
-  border-bottom-width: 1px;
+}
+
+.table tbody {
+  border-top: 2px solid #dee2e6;
 }
 
 .table thead th:nth-of-type(1) {
   font-weight: normal;
 }
 
-.table tbody th {
+.table tbody th,
+.table thead th:first-of-type {
   background-color: #F2F2F2;
   color: $button;
   font-weight: normal;
+}
+
+.table {
+  .square1 {
+    width: 20px;
+    height: 20px;
+    right: -15px;
+    top: 25px;
+  }
+
+  .square2 {
+    width: 25px;
+    height: 25px;
+    right: -10px;
+    top: -10px;
+  }
+
+  .square3 {
+    width: 15px;
+    height: 15px;
+    right: 25px;
+    top: -10px;
+  }
+
+  .square4 {
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    bottom: 25px;
+  }
+
+  .square5 {
+    width: 25px;
+    height: 25px;
+    left: -5px;
+    bottom: -10px;
+  }
+
+  .square6 {
+    width: 15px;
+    height: 15px;
+    left: 30px;
+    bottom: -10px;
+  }
 }
 @media (min-width: 1920px) {
   .row-limit {
