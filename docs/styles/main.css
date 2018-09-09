@@ -1,3 +1,5 @@
+#technologia p { margin-bottom: 0; }
+
 .container p { font-size: 1.1rem; }
 
 .banner .bg-logo .nav-link { display: block; padding: 0.5rem 0.7rem; }
@@ -272,16 +274,43 @@ li.nope::before { content: "\f00d"; color: red !important; }
 
 .icon img { width: 60px; height: auto; margin-right: 10px; margin-bottom: 0.5rem; }
 
+.h3, h3 { font-size: 2.4rem; }
+
+@media (min-width: 1920px) { .row-limit { max-width: 1920px !important; margin: 0 auto; } }
+
+@media (min-width: 991px) and (max-width: 1199px) { #diamond .square6 { display: none !important; } }
+
 @media (max-width: 991px) { .two { padding-right: 0 !important; padding-left: 0 !important; }
   .navbar-light .navbar-nav .nav-link { padding: 0.7rem; }
   .navbar-nav { padding: 1rem 0; }
   .socials { display: none; }
-  .navbar-brand { padding: 1rem 0; } }
+  .navbar-brand { padding: 1rem 0; }
+  .text-numbers { font-size: 3rem; } }
 
-.h3, h3 { font-size: 2.4rem; }
+@media (min-width: 768px) and (max-width: 991px) { footer.position-absolute { -webkit-transform: translateY(0%); transform: translateY(0%); display: block !important; position: static !important; }
+  #grass { padding-bottom: 0 !important; } }
 
-@media (max-width: 767px) { .two li { flex: 0 0 100%; max-width: 100%; margin-right: 0 !important; margin-left: 0 !important; }
+@media (max-width: 767px) { .top-menu { width: 100% !important; justify-content: center !important; }
+  #opinie .square6 { display: none !important; }
+  .row-limit > div:nth-of-type(2n+1) { padding-top: 1.5rem; padding-bottom: 0.5rem; }
+  .row-limit > div:nth-of-type(2n) { padding-top: 0.5rem; padding-bottom: 1.5rem; }
+  #offer article { margin-bottom: 3rem; }
+  .king::before { display: none; }
+  .king header, .king header strong { text-shadow: none; }
+  .footer .bg-secondary { padding-top: 1rem; }
+  .two li { flex: 0 0 100%; max-width: 100%; margin-right: 0 !important; margin-left: 0 !important; }
   .two li:nth-last-of-type(2) { border-bottom: none; }
   .testimonials-blockquote { margin: 0 !important !important; } }
 
-@media (min-width: 1920px) { .row-limit { max-width: 1920px !important; margin: 0 auto; } }
+@media (max-width: 500px) { .banner .bg-logo { display: none; }
+  #diamond .square5, #diamond .square6, #opinie .square3 { display: none !important; }
+  .cta-fixed { display: none !important; }
+  .display-3, .h1, .h2, .h3, h1, h2, h3 { font-size: 2.5rem; }
+  #faq .px-5, #oferta .p-5, #technologia .px-5, #uslugi .p-5 { padding-right: 0.5rem !important; padding-left: 0.5rem !important; }
+  #opinie button { margin-bottom: 1rem; }
+  footer .justify-content-end { flex-direction: column !important; }
+  footer .navbar-brand { margin-right: 0; }
+  .banner .navbar-brand { max-width: calc(100% - 80px); }
+  .navbar-light .navbar-nav .nav-link { padding: 0.4rem; }
+  .log-me-in { display: block; }
+  .navbar { max-height: 100vh; overflow-y: auto; } }
