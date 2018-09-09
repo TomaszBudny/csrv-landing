@@ -200,6 +200,10 @@ strong {
   font-family: 'Lato', sans-serif;
 }
 
+.text-headings {
+  color: $headers;
+}
+
 .block1 {
   .container {
     max-width: 1350px;
@@ -500,6 +504,9 @@ $slope: 5vw;
 .mb-s {
   margin-bottom: $slope!important;
 }
+.mb-xl-s {
+  margin-bottom: $slope*2!important;
+}
 
 .mt-s {
   margin-top: $slope!important;
@@ -539,7 +546,7 @@ $slope: 5vw;
   color: $button;
 }
 
-.free {
+.first {
   margin-top: -1-$slope!important;
   background: white;
   z-index: 2;
@@ -869,7 +876,21 @@ h3 {
 .table th {
   padding: 1rem 0.75rem;
 }
+
+.table thead th {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 2;
+  border-bottom-width: 1px;
+}
+
+.table thead th:nth-of-type(1) {
+  font-weight: normal;
+}
+
 .table tbody th {
+  background-color: #F2F2F2;
   color: $button;
   font-weight: normal;
 }
