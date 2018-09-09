@@ -891,6 +891,10 @@ h3 {
   border-top: 2px solid #dee2e6;
 }
 
+.table thead {
+  border-top: 1px solid #dee2e6;
+}
+
 .table thead th:nth-of-type(1) {
   font-weight: normal;
 }
@@ -900,6 +904,15 @@ h3 {
   background-color: #F2F2F2;
   color: $button;
   font-weight: normal;
+}
+
+.table tbody td {
+  vertical-align: middle !important;
+}
+
+.table-responsive {
+  padding-top: 20px;
+  padding-right: 20px;
 }
 
 .table {
@@ -994,6 +1007,10 @@ h3 {
   }
 }
 @media (max-width: 767px) {
+  .table-container {
+    max-width: 100%!important;
+  }
+
   .top-menu {
     width: 100% !important;
     justify-content: center !important;
@@ -1043,6 +1060,12 @@ h3 {
 
   .testimonials-blockquote {
     margin: 0!important !important;
+  }
+}
+@media (max-width: 600px) {
+  .table-container {
+    padding-right: 15px!important;
+    padding-left: 15px!important;
   }
 }
 @media (max-width: 500px) {

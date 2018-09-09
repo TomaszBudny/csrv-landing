@@ -302,9 +302,15 @@ li.nope::before { content: "\f00d"; color: red !important; }
 
 .table tbody { border-top: 2px solid #dee2e6; }
 
+.table thead { border-top: 1px solid #dee2e6; }
+
 .table thead th:nth-of-type(1) { font-weight: normal; }
 
 .table tbody th, .table thead th:first-of-type { background-color: #F2F2F2; color: #00BF66; font-weight: normal; }
+
+.table tbody td { vertical-align: middle !important; }
+
+.table-responsive { padding-top: 20px; padding-right: 20px; }
 
 .table .square1 { width: 20px; height: 20px; right: -15px; top: 25px; }
 
@@ -332,7 +338,8 @@ li.nope::before { content: "\f00d"; color: red !important; }
 @media (min-width: 768px) and (max-width: 991px) { footer.position-absolute { -webkit-transform: translateY(0%); transform: translateY(0%); display: block !important; position: static !important; }
   #grass { padding-bottom: 0 !important; } }
 
-@media (max-width: 767px) { .top-menu { width: 100% !important; justify-content: center !important; }
+@media (max-width: 767px) { .table-container { max-width: 100% !important; }
+  .top-menu { width: 100% !important; justify-content: center !important; }
   #opinie .square6 { display: none !important; }
   .row-limit > div:nth-of-type(2n+1) { padding-top: 1.5rem; padding-bottom: 0.5rem; }
   .row-limit > div:nth-of-type(2n) { padding-top: 0.5rem; padding-bottom: 1.5rem; }
@@ -343,6 +350,8 @@ li.nope::before { content: "\f00d"; color: red !important; }
   .two li { flex: 0 0 100%; max-width: 100%; margin-right: 0 !important; margin-left: 0 !important; }
   .two li:nth-last-of-type(2) { border-bottom: none; }
   .testimonials-blockquote { margin: 0 !important !important; } }
+
+@media (max-width: 600px) { .table-container { padding-right: 15px !important; padding-left: 15px !important; } }
 
 @media (max-width: 500px) { .banner .bg-logo { display: none; }
   #diamond .square5, #diamond .square6, #opinie .square3 { display: none !important; }
