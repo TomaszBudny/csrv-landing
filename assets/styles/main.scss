@@ -885,6 +885,7 @@ h3 {
   font-size: 1.5rem;
   text-transform: uppercase;
   line-height: 2;
+  width: 25%;
 }
 
 .table tbody {
@@ -910,54 +911,6 @@ h3 {
   vertical-align: middle !important;
 }
 
-.table-responsive {
-  padding-top: 20px;
-  padding-right: 20px;
-}
-
-.table {
-  .square1 {
-    width: 20px;
-    height: 20px;
-    right: -15px;
-    top: 25px;
-  }
-
-  .square2 {
-    width: 25px;
-    height: 25px;
-    right: -10px;
-    top: -10px;
-  }
-
-  .square3 {
-    width: 15px;
-    height: 15px;
-    right: 25px;
-    top: -10px;
-  }
-
-  .square4 {
-    width: 20px;
-    height: 20px;
-    left: -10px;
-    bottom: 25px;
-  }
-
-  .square5 {
-    width: 25px;
-    height: 25px;
-    left: -5px;
-    bottom: -10px;
-  }
-
-  .square6 {
-    width: 15px;
-    height: 15px;
-    left: 30px;
-    bottom: -10px;
-  }
-}
 @media (min-width: 1920px) {
   .row-limit {
     max-width: 1920px!important;

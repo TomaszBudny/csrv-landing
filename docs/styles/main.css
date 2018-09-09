@@ -298,7 +298,7 @@ li.nope::before { content: "\f00d"; color: red !important; }
 
 .table td, .table th { padding: 1rem 0.75rem; }
 
-.table thead th { font-weight: bold; font-size: 1.5rem; text-transform: uppercase; line-height: 2; }
+.table thead th { font-weight: bold; font-size: 1.5rem; text-transform: uppercase; line-height: 2; width: 25%; }
 
 .table tbody { border-top: 2px solid #dee2e6; }
 
@@ -309,20 +309,6 @@ li.nope::before { content: "\f00d"; color: red !important; }
 .table tbody th, .table thead th:first-of-type { background-color: #F2F2F2; color: #00BF66; font-weight: normal; }
 
 .table tbody td { vertical-align: middle !important; }
-
-.table-responsive { padding-top: 20px; padding-right: 20px; }
-
-.table .square1 { width: 20px; height: 20px; right: -15px; top: 25px; }
-
-.table .square2 { width: 25px; height: 25px; right: -10px; top: -10px; }
-
-.table .square3 { width: 15px; height: 15px; right: 25px; top: -10px; }
-
-.table .square4 { width: 20px; height: 20px; left: -10px; bottom: 25px; }
-
-.table .square5 { width: 25px; height: 25px; left: -5px; bottom: -10px; }
-
-.table .square6 { width: 15px; height: 15px; left: 30px; bottom: -10px; }
 
 @media (min-width: 1920px) { .row-limit { max-width: 1920px !important; margin: 0 auto; } }
 

@@ -105,14 +105,14 @@
       <header class="mb-5">
         <h2 class="icon position-relative">Nasze pakiety</h2>
       </header>
-      <div class="table-responsive">
+      <div class="table-responsive js-scrollable">
         <table class="table table-bordered">
           <thead>
             <tr>
               <th scope="col" class="col-3 text-left align-middle text-body">Opcje</th>
               <th scope="col" class="col-3 text-headings"><img src="images/ico_dirt.png" /> Free</th>
               <th scope="col" class="col-3 text-headings"><img src="images/ico_grass.png" /> Grass</th>
-              <th scope="col" class="col-3 text-headings"><span class="position-absolute d-block bg-primary square square1"></span><span class="position-absolute d-block bg-primary square square2"></span><span class="position-absolute d-block bg-primary square square3"></span><img src="images/ico_diamond.png"
+              <th scope="col" class="col-3 text-headings"><img src="images/ico_diamond.png"
                 /> Diamond</th>
             </tr>
           </thead>
@@ -229,7 +229,7 @@
               <th scope="row" data-toggle="tooltip" data-placement="right" title="Tooltip on top">RCON <i class="far fa-question-circle"></i></th>
               <td><i class="fas fa-times"></i></td>
               <td><i class="fas fa-times"></i></td>
-              <td class="last position-relative"><span class="position-absolute d-block bg-primary square square4"></span><span class="position-absolute d-block bg-primary square square5"></span><span class="position-absolute d-block bg-primary square square6"></span><i class="fas fa-check-square"></i></td>
+              <td class="last position-relative"><i class="fas fa-check-square"></i></td>
             </tr>
           </tbody>
         </table>
@@ -645,6 +645,8 @@
   </script>
   <script src="scripts/bootstrap.bundle.min.js"></script>
   <script src="scripts/main.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+  <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
   <script>
     (function($) {
       $(document).ready(function() {
