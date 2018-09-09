@@ -844,6 +844,10 @@ h3 {
 }
 // COMPARISON
 
+.table-responsive .container-fluid {
+  min-width: 620px;
+}
+
 .table-responsive img {
   width: 48px;
   height: 48px;
@@ -927,6 +931,11 @@ h3 {
   .text-numbers {
     font-size: 3rem;
   }
+  .table-responsive img {
+    display: block;
+    margin: 0 auto;
+  }
+
 }
 @media (min-width: 768px) and (max-width: 991px) {
   footer.position-absolute {
@@ -941,8 +950,11 @@ h3 {
 }
 @media (max-width: 767px) {
   .table-container {
+    padding-right: 15px!important;
+    padding-left: 15px!important;
     max-width: 100%!important;
   }
+
 
   .top-menu {
     width: 100% !important;
@@ -993,12 +1005,6 @@ h3 {
 
   .testimonials-blockquote {
     margin: 0!important !important;
-  }
-}
-@media (max-width: 600px) {
-  .table-container {
-    padding-right: 15px!important;
-    padding-left: 15px!important;
   }
 }
 @media (max-width: 500px) {

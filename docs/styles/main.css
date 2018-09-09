@@ -284,6 +284,8 @@ li.nope::before { content: "\f00d"; color: red !important; }
 
 .h3, h3 { font-size: 2.4rem; }
 
+.table-responsive .container-fluid { min-width: 620px; }
+
 .table-responsive img { width: 48px; height: 48px; margin-right: 8px; }
 
 .table-header { font-weight: bold; font-size: 1.5rem; text-transform: uppercase; line-height: 2; }
@@ -311,12 +313,13 @@ li.nope::before { content: "\f00d"; color: red !important; }
   .navbar-nav { padding: 1rem 0; }
   .socials { display: none; }
   .navbar-brand { padding: 1rem 0; }
-  .text-numbers { font-size: 3rem; } }
+  .text-numbers { font-size: 3rem; }
+  .table-responsive img { display: block; margin: 0 auto; } }
 
 @media (min-width: 768px) and (max-width: 991px) { footer.position-absolute { -webkit-transform: translateY(0%); transform: translateY(0%); display: block !important; position: static !important; }
   #grass { padding-bottom: 0 !important; } }
 
-@media (max-width: 767px) { .table-container { max-width: 100% !important; }
+@media (max-width: 767px) { .table-container { padding-right: 15px !important; padding-left: 15px !important; max-width: 100% !important; }
   .top-menu { width: 100% !important; justify-content: center !important; }
   #opinie .square6 { display: none !important; }
   .row-limit > div:nth-of-type(2n+1) { padding-top: 1.5rem; padding-bottom: 0.5rem; }
@@ -328,8 +331,6 @@ li.nope::before { content: "\f00d"; color: red !important; }
   .two li { flex: 0 0 100%; max-width: 100%; margin-right: 0 !important; margin-left: 0 !important; }
   .two li:nth-last-of-type(2) { border-bottom: none; }
   .testimonials-blockquote { margin: 0 !important !important; } }
-
-@media (max-width: 600px) { .table-container { padding-right: 15px !important; padding-left: 15px !important; } }
 
 @media (max-width: 500px) { .banner .bg-logo { display: none; }
   #diamond .square5, #diamond .square6, #opinie .square3 { display: none !important; }
